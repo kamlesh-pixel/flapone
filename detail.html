@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flapone Drones</title>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="fixed-navbar mtb0 mlra bg1 pf t0 l0 zi99 w100 dn"
+      id="fixed-navbar"
+    >
+      <nav class="nav-conatiner df ptb12">
+        <ul class="df">
+          <li class="mr24">
+            <a href="#Overview" class="fc2">Overview</a>
+          </li>
+          <li class="mr24">
+            <a href="#Frame" class="fc2">Frame</a>
+          </li>
+          <li class="mr24">
+            <a href="#Propulsion_System" class="fc2">Propulsion System</a>
+          </li>
+          <li class="mr24">
+            <a href="#Spray_System" class="fc2">Spray System</a>
+          </li>
+          <li class="mr24">
+            <a href="#Power_System" class="fc2">Power System</a>
+          </li>
+          <li class="mr24">
+            <a href="#Flight_Controller" class="fc2">Flight Controller</a>
+          </li>
+          <li class="mr24">
+            <a href="#Communication_System" class="fc2">Communication System</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+
+    <header id="header-flapone">
+      <div class="header-logo">
+        <a href="index.html" style="height: 100%">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets/images/flapone-logo-new.png"
+            alt="FlapOne Avaition"
+            class=""
+        /></a>
+      </div>
+
+      <nav>
+        <a href="drone-training.html">Drone Training</a>
+        <a href="drone-product.html">Drone Products</a>
+        <a href="drone-services.html">Drone Services</a>
+        <a href="aircraft-training.html">Aircraft Training </a>
+        <a href="#" target="_blank"
+          ><button class="contact-btn">Contact Us</button></a
+        >
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <a href="index.html" class="ham-logo">
+        <img
+          src="https://www.hlimg.com/images/flapone-crm/assets/images/flapone-logo-new.png"
+          alt="FlapOne Avaition"
+          class=""
+      /></a>
+      <a href="drone-training.html" class="v-center"
+        ><svg
+          width="16px"
+          height="16px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr8"
+        >
+          <path
+            d="M10.2772 18.4623C9.9802 18.751 9.97351 19.2258 10.2623 19.5228C10.551 19.8198 11.0258 19.8265 11.3228 19.5377L10.2772 18.4623ZM18 12L18.5228 12.5377C18.6681 12.3965 18.75 12.2026 18.75 12C18.75 11.7974 18.6681 11.6035 18.5228 11.4623L18 12ZM11.3228 4.46225C11.0258 4.17351 10.551 4.1802 10.2623 4.47719C9.97351 4.77418 9.9802 5.24901 10.2772 5.53775L11.3228 4.46225ZM5.47721 17.2952C5.18021 17.584 5.17351 18.0588 5.46224 18.3558C5.75097 18.6528 6.2258 18.6595 6.52279 18.3708L5.47721 17.2952ZM12 12L12.5228 12.5378C12.668 12.3965 12.75 12.2026 12.75 12C12.75 11.7974 12.668 11.6035 12.5228 11.4622L12 12ZM6.52279 5.62924C6.2258 5.34051 5.75097 5.34721 5.46224 5.64421C5.17351 5.9412 5.18021 6.41603 5.47721 6.70476L6.52279 5.62924ZM11.3228 19.5377L18.5228 12.5377L17.4772 11.4623L10.2772 18.4623L11.3228 19.5377ZM18.5228 11.4623L11.3228 4.46225L10.2772 5.53775L17.4772 12.5377L18.5228 11.4623ZM6.52279 18.3708L12.5228 12.5378L11.4772 11.4622L5.47721 17.2952L6.52279 18.3708ZM12.5228 11.4622L6.52279 5.62924L5.47721 6.70476L11.4772 12.5378L12.5228 11.4622Z"
+            fill="#555"
+          /></svg
+        >Drone Training</a
+      >
+      <a href="drone-product.html" class="v-center"
+        ><svg
+          width="16px"
+          height="16px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr8"
+        >
+          <path
+            d="M10.2772 18.4623C9.9802 18.751 9.97351 19.2258 10.2623 19.5228C10.551 19.8198 11.0258 19.8265 11.3228 19.5377L10.2772 18.4623ZM18 12L18.5228 12.5377C18.6681 12.3965 18.75 12.2026 18.75 12C18.75 11.7974 18.6681 11.6035 18.5228 11.4623L18 12ZM11.3228 4.46225C11.0258 4.17351 10.551 4.1802 10.2623 4.47719C9.97351 4.77418 9.9802 5.24901 10.2772 5.53775L11.3228 4.46225ZM5.47721 17.2952C5.18021 17.584 5.17351 18.0588 5.46224 18.3558C5.75097 18.6528 6.2258 18.6595 6.52279 18.3708L5.47721 17.2952ZM12 12L12.5228 12.5378C12.668 12.3965 12.75 12.2026 12.75 12C12.75 11.7974 12.668 11.6035 12.5228 11.4622L12 12ZM6.52279 5.62924C6.2258 5.34051 5.75097 5.34721 5.46224 5.64421C5.17351 5.9412 5.18021 6.41603 5.47721 6.70476L6.52279 5.62924ZM11.3228 19.5377L18.5228 12.5377L17.4772 11.4623L10.2772 18.4623L11.3228 19.5377ZM18.5228 11.4623L11.3228 4.46225L10.2772 5.53775L17.4772 12.5377L18.5228 11.4623ZM6.52279 18.3708L12.5228 12.5378L11.4772 11.4622L5.47721 17.2952L6.52279 18.3708ZM12.5228 11.4622L6.52279 5.62924L5.47721 6.70476L11.4772 12.5378L12.5228 11.4622Z"
+            fill="#555"
+          /></svg
+        >Drone Products</a
+      >
+      <a href="drone-services.html" class="v-center"
+        ><svg
+          width="16px"
+          height="16px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr8"
+        >
+          <path
+            d="M10.2772 18.4623C9.9802 18.751 9.97351 19.2258 10.2623 19.5228C10.551 19.8198 11.0258 19.8265 11.3228 19.5377L10.2772 18.4623ZM18 12L18.5228 12.5377C18.6681 12.3965 18.75 12.2026 18.75 12C18.75 11.7974 18.6681 11.6035 18.5228 11.4623L18 12ZM11.3228 4.46225C11.0258 4.17351 10.551 4.1802 10.2623 4.47719C9.97351 4.77418 9.9802 5.24901 10.2772 5.53775L11.3228 4.46225ZM5.47721 17.2952C5.18021 17.584 5.17351 18.0588 5.46224 18.3558C5.75097 18.6528 6.2258 18.6595 6.52279 18.3708L5.47721 17.2952ZM12 12L12.5228 12.5378C12.668 12.3965 12.75 12.2026 12.75 12C12.75 11.7974 12.668 11.6035 12.5228 11.4622L12 12ZM6.52279 5.62924C6.2258 5.34051 5.75097 5.34721 5.46224 5.64421C5.17351 5.9412 5.18021 6.41603 5.47721 6.70476L6.52279 5.62924ZM11.3228 19.5377L18.5228 12.5377L17.4772 11.4623L10.2772 18.4623L11.3228 19.5377ZM18.5228 11.4623L11.3228 4.46225L10.2772 5.53775L17.4772 12.5377L18.5228 11.4623ZM6.52279 18.3708L12.5228 12.5378L11.4772 11.4622L5.47721 17.2952L6.52279 18.3708ZM12.5228 11.4622L6.52279 5.62924L5.47721 6.70476L11.4772 12.5378L12.5228 11.4622Z"
+            fill="#555"
+          /></svg
+        >Drone Services</a
+      >
+      <a href="aircraft-training.html" class="v-center"
+        ><svg
+          width="16px"
+          height="16px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="mr8"
+        >
+          <path
+            d="M10.2772 18.4623C9.9802 18.751 9.97351 19.2258 10.2623 19.5228C10.551 19.8198 11.0258 19.8265 11.3228 19.5377L10.2772 18.4623ZM18 12L18.5228 12.5377C18.6681 12.3965 18.75 12.2026 18.75 12C18.75 11.7974 18.6681 11.6035 18.5228 11.4623L18 12ZM11.3228 4.46225C11.0258 4.17351 10.551 4.1802 10.2623 4.47719C9.97351 4.77418 9.9802 5.24901 10.2772 5.53775L11.3228 4.46225ZM5.47721 17.2952C5.18021 17.584 5.17351 18.0588 5.46224 18.3558C5.75097 18.6528 6.2258 18.6595 6.52279 18.3708L5.47721 17.2952ZM12 12L12.5228 12.5378C12.668 12.3965 12.75 12.2026 12.75 12C12.75 11.7974 12.668 11.6035 12.5228 11.4622L12 12ZM6.52279 5.62924C6.2258 5.34051 5.75097 5.34721 5.46224 5.64421C5.17351 5.9412 5.18021 6.41603 5.47721 6.70476L6.52279 5.62924ZM11.3228 19.5377L18.5228 12.5377L17.4772 11.4623L10.2772 18.4623L11.3228 19.5377ZM18.5228 11.4623L11.3228 4.46225L10.2772 5.53775L17.4772 12.5377L18.5228 11.4623ZM6.52279 18.3708L12.5228 12.5378L11.4772 11.4622L5.47721 17.2952L6.52279 18.3708ZM12.5228 11.4622L6.52279 5.62924L5.47721 6.70476L11.4772 12.5378L12.5228 11.4622Z"
+            fill="#555"
+          /></svg
+        >Aircraft Training</a
+      >
+      <a href="#" class="cta-btn box-center">Contact Us</a>
+    </div>
+    <div class="overlay"></div>
+    <section></section>
+
+    <section class="wrapper mt16">
+      <div class="detail-product df aifs">
+        <div class="detail-img card-img flx50">
+          <div class="img-box df ofh w100">
+            <img id="mainImage" src="#" class="w100 fade-image media-fill" />
+          </div>
+
+          <div class="thumb-wrapper">
+            <button
+              class="scroll-btn left"
+              id="scrollLeft"
+              onclick="scrollThumbnails(-100)"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.7071 4.29289C12.0976 4.68342 12.0976 5.31658 11.7071 5.70711L6.41421 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H6.41421L11.7071 18.2929C12.0976 18.6834 12.0976 19.3166 11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 10.2929 19.7071L3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929L10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+
+            <ul
+              class="detail-thumb mt8 scrollable-thumbs center-if-no-scroll w100"
+              id="thumbContainer"
+              onclick="imagesChagner(event)"
+            >
+              <li
+                class="detail-thumb-item thumb-item box-center ofh active"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-1_1750059155.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-1_1750059155.jpg"
+                />
+              </li>
+              <li
+                class="detail-thumb-item"
+                data-type="video"
+                data-src="http://media.w3.org/2010/05/sintel/trailer.mp4"
+              >
+                <img src="https://img.youtube.com/vi/videoid/hqdefault.jpg" />
+              </li>
+              <li
+                class="detail-thumb-item"
+                data-type="youtube"
+                data-src="https://www.youtube.com/watch?v=ibV9KU22fAc&t=71s"
+              >
+                <img
+                  src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg"
+                />
+              </li>
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-2_1750059279.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-2_1750059279.jpg"
+                />
+              </li>
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-3_1750059419.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-3_1750059419.jpg"
+                />
+              </li>
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-4_1750059507.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Nautical-Miles-4_1750059507.jpg"
+                />
+              </li>
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone/assets/images/internal-images/7876.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone/assets/images/internal-images/7876.jpg"
+                />
+              </li>
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone/assets/images/internal-images/industrial-drone-applying-pesticides-green-field.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone/assets/images/internal-images/industrial-drone-applying-pesticides-green-field.jpg"
+                />
+              </li>
+
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://www.hlimg.com/images/flapone/assets/images/internal-images/illustration-ultra-realistic-modern-fix-wing-drone-plane.jpg"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone/assets/images/internal-images/illustration-ultra-realistic-modern-fix-wing-drone-plane.jpg"
+                />
+              </li>
+
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://i.postimg.cc/VLPtgs4p/female-copilot-pushing-buttons-switch-dashboard-panel-flying-airplane-with-navigation-control-comman.jpg"
+              >
+                <img
+                  src="https://i.postimg.cc/VLPtgs4p/female-copilot-pushing-buttons-switch-dashboard-panel-flying-airplane-with-navigation-control-comman.jpg"
+                />
+              </li>
+
+              <li
+                class="detail-thumb-item thumb-item box-center ofh"
+                data-type="image"
+                data-src="https://i.postimg.cc/xdnJGkd1/close-up-blurry-hand-holding-pencil-23-2149080811.jpg"
+              >
+                <img
+                  src="https://i.postimg.cc/xdnJGkd1/close-up-blurry-hand-holding-pencil-23-2149080811.jpg"
+                />
+              </li>
+            </ul>
+
+            <button
+              class="scroll-btn right"
+              id="scrollRight"
+              onclick="scrollThumbnails(100)"
+            >
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="abt-prodcut pl48 flx50">
+          <div class="product-detail-title">
+            <p class="fw6 ls1 fs28 lh32">DJI Mini 4 - Perfect for beginners</p>
+            <div class="v-center mt4 fww sub-reviews">
+              <div class="grp v-center">
+                <div class="stars mr8 prod-review">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                </div>
+                <p class="ls1 fc4 fs14">(428 reviews)</p>
+              </div>
+              <div class="grp1 v-center">
+                <p class="ls1 ml24 fc4 fs14 v-center buyers">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr4"
+                  >
+                    <path
+                      d="M14 19.2857L15.8 21L20 17M4 21C4 17.134 7.13401 14 11 14C12.4872 14 13.8662 14.4638 15 15.2547M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z"
+                      stroke="#555"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="ml4"> 2350 Buyers </span>
+                </p>
+                <p class="ls1 ml24 fc4 fs14 v-center share">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M23 5.5C23 7.98528 20.9853 10 18.5 10C17.0993 10 15.8481 9.36007 15.0228 8.35663L9.87308 10.9315C9.95603 11.2731 10 11.63 10 11.9971C10 12.3661 9.9556 12.7247 9.87184 13.0678L15.0228 15.6433C15.8482 14.6399 17.0993 14 18.5 14C20.9853 14 23 16.0147 23 18.5C23 20.9853 20.9853 23 18.5 23C16.0147 23 14 20.9853 14 18.5C14 18.1319 14.0442 17.7742 14.1276 17.4318L8.97554 14.8558C8.1502 15.8581 6.89973 16.4971 5.5 16.4971C3.01472 16.4971 1 14.4824 1 11.9971C1 9.51185 3.01472 7.49713 5.5 7.49713C6.90161 7.49713 8.15356 8.13793 8.97886 9.14254L14.1275 6.5682C14.0442 6.2258 14 5.86806 14 5.5C14 3.01472 16.0147 1 18.5 1C20.9853 1 23 3.01472 23 5.5ZM16.0029 5.5C16.0029 6.87913 17.1209 7.99713 18.5 7.99713C19.8791 7.99713 20.9971 6.87913 20.9971 5.5C20.9971 4.12087 19.8791 3.00287 18.5 3.00287C17.1209 3.00287 16.0029 4.12087 16.0029 5.5ZM16.0029 18.5C16.0029 19.8791 17.1209 20.9971 18.5 20.9971C19.8791 20.9971 20.9971 19.8791 20.9971 18.5C20.9971 17.1209 19.8791 16.0029 18.5 16.0029C17.1209 16.0029 16.0029 17.1209 16.0029 18.5ZM5.5 14.4943C4.12087 14.4943 3.00287 13.3763 3.00287 11.9971C3.00287 10.618 4.12087 9.5 5.5 9.5C6.87913 9.5 7.99713 10.618 7.99713 11.9971C7.99713 13.3763 6.87913 14.4943 5.5 14.4943Z"
+                      fill="#555"
+                    />
+                  </svg>
+                  <span class="ml4"> Share</span>
+                </p>
+              </div>
+            </div>
+            <div class="mt32 prod-key-feature">
+              <p class="mb12 fc4 ls1 fw6 fs20">Highlights:</p>
+              <ul class="prod-feature-list p-detail">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="price mt32">
+              <div class="v-center">
+                <span class="fs24">₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <div class="drone-training-buttons detail-btn">
+              <button class="drone-training-btn-secondary flx45 fw6">
+                Get Quotes
+              </button>
+              <button class="drone-training-btn-primary flx45 fw6">
+                Get Best Price
+              </button>
+            </div>
+            <div class="fixed-button v-center">
+              <button class="drone-training-btn-secondary flx45 fw6">
+                Get Quotes
+              </button>
+              <button class="drone-training-btn-primary flx45 fw6">
+                Get Best Price
+              </button>
+            </div>
+
+            <div class="product-add-ons mt32">
+              <ul class="v-center jcsb fc4 fs14 ls1 fww lh32">
+                <li class="v-center">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr4"
+                  >
+                    <path
+                      d="M9 12L11 14L15 9.99999M20 12C20 16.4611 14.54 19.6937 12.6414 20.683C12.4361 20.79 12.3334 20.8435 12.191 20.8712C12.08 20.8928 11.92 20.8928 11.809 20.8712C11.6666 20.8435 11.5639 20.79 11.3586 20.683C9.45996 19.6937 4 16.4611 4 12V8.21759C4 7.41808 4 7.01833 4.13076 6.6747C4.24627 6.37113 4.43398 6.10027 4.67766 5.88552C4.9535 5.64243 5.3278 5.50207 6.0764 5.22134L11.4382 3.21067C11.6461 3.13271 11.75 3.09373 11.857 3.07827C11.9518 3.06457 12.0482 3.06457 12.143 3.07827C12.25 3.09373 12.3539 3.13271 12.5618 3.21067L17.9236 5.22134C18.6722 5.50207 19.0465 5.64243 19.3223 5.88552C19.566 6.10027 19.7537 6.37113 19.8692 6.6747C20 7.01833 20 7.41808 20 8.21759V12Z"
+                      stroke="#f4836c"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Manufacturer Warranty
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 512 512"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    class="mr4"
+                  >
+                    <title>support</title>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="support"
+                        fill="#f4836c"
+                        transform="translate(42.666667, 42.666667)"
+                      >
+                        <path
+                          d="M379.734355,174.506667 C373.121022,106.666667 333.014355,-2.13162821e-14 209.067688,-2.13162821e-14 C85.1210217,-2.13162821e-14 45.014355,106.666667 38.4010217,174.506667 C15.2012632,183.311569 -0.101643453,205.585799 0.000508304259,230.4 L0.000508304259,260.266667 C0.000508304259,293.256475 26.7445463,320 59.734355,320 C92.7241638,320 119.467688,293.256475 119.467688,260.266667 L119.467688,230.4 C119.360431,206.121456 104.619564,184.304973 82.134355,175.146667 C86.4010217,135.893333 107.307688,42.6666667 209.067688,42.6666667 C310.827688,42.6666667 331.521022,135.893333 335.787688,175.146667 C313.347976,184.324806 298.68156,206.155851 298.667688,230.4 L298.667688,260.266667 C298.760356,283.199651 311.928618,304.070103 332.587688,314.026667 C323.627688,330.88 300.801022,353.706667 244.694355,360.533333 C233.478863,343.50282 211.780225,336.789048 192.906491,344.509658 C174.032757,352.230268 163.260418,372.226826 167.196286,392.235189 C171.132153,412.243552 188.675885,426.666667 209.067688,426.666667 C225.181549,426.577424 239.870491,417.417465 247.041022,402.986667 C338.561022,392.533333 367.787688,345.386667 376.961022,317.653333 C401.778455,309.61433 418.468885,286.351502 418.134355,260.266667 L418.134355,230.4 C418.23702,205.585799 402.934114,183.311569 379.734355,174.506667 Z M76.8010217,260.266667 C76.8010217,269.692326 69.1600148,277.333333 59.734355,277.333333 C50.3086953,277.333333 42.6676884,269.692326 42.6676884,260.266667 L42.6676884,230.4 C42.6676884,224.302667 45.9205765,218.668499 51.2010216,215.619833 C56.4814667,212.571166 62.9872434,212.571166 68.2676885,215.619833 C73.5481336,218.668499 76.8010217,224.302667 76.8010217,230.4 L76.8010217,260.266667 Z M341.334355,230.4 C341.334355,220.97434 348.975362,213.333333 358.401022,213.333333 C367.826681,213.333333 375.467688,220.97434 375.467688,230.4 L375.467688,260.266667 C375.467688,269.692326 367.826681,277.333333 358.401022,277.333333 C348.975362,277.333333 341.334355,269.692326 341.334355,260.266667 L341.334355,230.4 Z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  Expert Support
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8 3C6.89543 3 6 3.89543 6 5V7.35418C6.73294 6.52375 7.80531 6 9 6H15C16.1947 6 17.2671 6.52375 18 7.35418V5C18 3.89543 17.1046 3 16 3H8ZM18 13H6C5.44772 13 5 13.4477 5 14V17C5 17.5523 5.44772 18 6 18H18C18.5523 18 19 17.5523 19 17V14C19 13.4477 18.5523 13 18 13ZM17 11V10C17 8.89543 16.1046 8 15 8H9C7.89543 8 7 8.89543 7 10V11H17ZM4 5V11.7639L3.9768 11.7849C3.87839 11.336 3.47843 11 3 11H2C1.44772 11 1 11.4477 1 12C1 12.5523 1.44772 13 2 13H3C3.06013 13 3.11902 12.9947 3.17623 12.9845C3.06216 13.3017 3 13.6436 3 14V17C3 17.8885 3.38625 18.6868 4 19.2361V22C4 22.5523 4.44772 23 5 23H6C6.55228 23 7 22.5523 7 22V20H17V22C17 22.5523 17.4477 23 18 23H19C19.5523 23 20 22.5523 20 22V19.2361C20.6137 18.6868 21 17.8885 21 17V14C21 13.6436 20.9378 13.3017 20.8238 12.9845C20.881 12.9947 20.9399 13 21 13H22C22.5523 13 23 12.5523 23 12C23 11.4477 22.5523 11 22 11H21C20.5216 11 20.1216 11.336 20.0232 11.7849C20.0155 11.7778 20.0078 11.7708 20 11.7639V5C20 2.79086 18.2091 1 16 1H8C5.79086 1 4 2.79086 4 5ZM6 15.5C6 14.6716 6.67157 14 7.5 14C8.32843 14 9 14.6716 9 15.5C9 16.3284 8.32843 17 7.5 17C6.67157 17 6 16.3284 6 15.5ZM16.5 14C15.6716 14 15 14.6716 15 15.5C15 16.3284 15.6716 17 16.5 17C17.3284 17 18 16.3284 18 15.5C18 14.6716 17.3284 14 16.5 14Z"
+                      fill="#f4836c"
+                    />
+                  </svg>
+                  Free Shipping
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-detail-desc" data-aos="fade-up">
+        <div class="content-container pb32" id="Overview">
+          <h2 class="fw6 fs20 mb12 ptb8">Overview</h2>
+          <div class="product-desc">
+            <p class="lh24 fc4">
+              DJI Mini 4 Pro is a cutting-edge mini-camera drone. It has
+              powerful imaging capabilities, omnidirectional obstacle sensing,
+              ActiveTrack 360° with the new Manual Mode, and 20km FHD video
+              transmission, and it is a favourite for pros and beginners alike.
+              The average cost of this drone camera in India is
+              INR&nbsp;₹140,000.
+            </p>
+          </div>
+        </div>
+        <div class="content-container pb32" id="Overview">
+          <h2 class="fw6 fs20 mb12 ptb8 ptb8">Land Survey Applications</h2>
+          <div class="product-desc">
+            <p class="lh24 fc4">
+              DJI Mini 4 Pro is a cutting-edge mini-camera drone. It has
+              powerful imaging capabilities, omnidirectional obstacle sensing,
+              ActiveTrack 360° with the new Manual Mode, and 20km FHD video
+              transmission, and it is a favourite for pros and beginners alike.
+              The average cost of this drone camera in India is
+              INR&nbsp;₹140,000.
+            </p>
+          </div>
+        </div>
+        <div class="content-container" id="Propulsion_System">
+          <h2 class="fw6 fs20 mb12 ptb8">Propulsion System</h2>
+          <div class="program-desc lh30 fc4">
+            <table
+              class="table table-bordered"
+              style="
+                box-sizing: border-box;
+                border-collapse: collapse;
+                caption-side: bottom;
+                width: 100%;
+                margin-bottom: 1rem;
+                color: rgb(33, 37, 41);
+                border: 1px solid #dee2e6;
+                --bs-table-bg: transparent;
+                --bs-table-striped-color: #212529;
+                --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+                --bs-table-active-color: #212529;
+                --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+                --bs-table-hover-color: #212529;
+                --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+                vertical-align: top;
+                font-family: Roboto, sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-weight: 500;
+                letter-spacing: normal;
+                orphans: 2;
+                text-align: left;
+                text-transform: none;
+                widows: 2;
+                word-spacing: 0px;
+                -webkit-text-stroke-width: 0px;
+                white-space: normal;
+                background-color: rgb(255, 255, 255);
+                text-decoration-thickness: initial;
+                text-decoration-style: initial;
+                text-decoration-color: initial;
+              "
+            >
+              <tbody
+                style="
+                  box-sizing: border-box;
+                  border-color: inherit;
+                  border-style: solid;
+                  border-width: 0px;
+                  vertical-align: inherit;
+                "
+              >
+                <tr
+                  style="
+                    box-sizing: border-box;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                  "
+                >
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Motor
+                  </th>
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Hobbywing X6
+                  </th>
+                </tr>
+                <tr
+                  style="
+                    box-sizing: border-box;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                  "
+                >
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Motor Type
+                  </th>
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Brushless DC Motor
+                  </th>
+                </tr>
+                <tr
+                  style="
+                    box-sizing: border-box;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                  "
+                >
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Electronic Speed Control
+                  </th>
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    80A FOC
+                  </th>
+                </tr>
+                <tr
+                  style="
+                    box-sizing: border-box;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                  "
+                >
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Supply Voltage
+                  </th>
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    12 S (44.4 Volt)
+                  </th>
+                </tr>
+                <tr
+                  style="
+                    box-sizing: border-box;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                  "
+                >
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Propellers
+                  </th>
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Hobbywing 2388
+                  </th>
+                </tr>
+                <tr
+                  style="
+                    box-sizing: border-box;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-width: 1px 0px;
+                  "
+                >
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Propeller Material
+                  </th>
+                  <th
+                    style="
+                      box-sizing: border-box;
+                      text-align: -webkit-match-parent;
+                      border-color: rgb(222, 226, 230);
+                      border-style: solid;
+                      border-width: 0px 1px;
+                      padding: 0.5rem;
+                      vertical-align: top;
+                      border-image: initial;
+                      background-color: var(--bs-table-bg);
+                      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                    "
+                  >
+                    Carbon Fibre
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- <div class="product-tags-scroll">
+          <div class="product-tags mb32">
+            <a href="#"><p class="mr12 chips">Agriculture</p></a>
+            <p class="mr12 chips">Photography</p>
+            <p class="mr12 chips">Drone Mapping</p>
+          </div>
+        </div> -->
+
+        <div class="product-tags-scroll">
+          <div class="product-tags mb32">
+            <a href="#"
+              ><p class="mr12 v-center">
+                <svg
+                  width="14px"
+                  height="14px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.2772 18.4623C9.9802 18.751 9.97351 19.2258 10.2623 19.5228C10.551 19.8198 11.0258 19.8265 11.3228 19.5377L10.2772 18.4623ZM18 12L18.5228 12.5377C18.6681 12.3965 18.75 12.2026 18.75 12C18.75 11.7974 18.6681 11.6035 18.5228 11.4623L18 12ZM11.3228 4.46225C11.0258 4.17351 10.551 4.1802 10.2623 4.47719C9.97351 4.77418 9.9802 5.24901 10.2772 5.53775L11.3228 4.46225ZM5.47721 17.2952C5.18021 17.584 5.17351 18.0588 5.46224 18.3558C5.75097 18.6528 6.2258 18.6595 6.52279 18.3708L5.47721 17.2952ZM12 12L12.5228 12.5378C12.668 12.3965 12.75 12.2026 12.75 12C12.75 11.7974 12.668 11.6035 12.5228 11.4622L12 12ZM6.52279 5.62924C6.2258 5.34051 5.75097 5.34721 5.46224 5.64421C5.17351 5.9412 5.18021 6.41603 5.47721 6.70476L6.52279 5.62924ZM11.3228 19.5377L18.5228 12.5377L17.4772 11.4623L10.2772 18.4623L11.3228 19.5377ZM18.5228 11.4623L11.3228 4.46225L10.2772 5.53775L17.4772 12.5377L18.5228 11.4623ZM6.52279 18.3708L12.5228 12.5378L11.4772 11.4622L5.47721 17.2952L6.52279 18.3708ZM12.5228 11.4622L6.52279 5.62924L5.47721 6.70476L11.4772 12.5378L12.5228 11.4622Z"
+                    fill="#555"
+                  />
+                </svg>
+                Agriculture
+              </p></a
+            >
+            <p class="mr12 fc4 v-center">
+              <svg
+                width="14px"
+                height="14px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.2772 18.4623C9.9802 18.751 9.97351 19.2258 10.2623 19.5228C10.551 19.8198 11.0258 19.8265 11.3228 19.5377L10.2772 18.4623ZM18 12L18.5228 12.5377C18.6681 12.3965 18.75 12.2026 18.75 12C18.75 11.7974 18.6681 11.6035 18.5228 11.4623L18 12ZM11.3228 4.46225C11.0258 4.17351 10.551 4.1802 10.2623 4.47719C9.97351 4.77418 9.9802 5.24901 10.2772 5.53775L11.3228 4.46225ZM5.47721 17.2952C5.18021 17.584 5.17351 18.0588 5.46224 18.3558C5.75097 18.6528 6.2258 18.6595 6.52279 18.3708L5.47721 17.2952ZM12 12L12.5228 12.5378C12.668 12.3965 12.75 12.2026 12.75 12C12.75 11.7974 12.668 11.6035 12.5228 11.4622L12 12ZM6.52279 5.62924C6.2258 5.34051 5.75097 5.34721 5.46224 5.64421C5.17351 5.9412 5.18021 6.41603 5.47721 6.70476L6.52279 5.62924ZM11.3228 19.5377L18.5228 12.5377L17.4772 11.4623L10.2772 18.4623L11.3228 19.5377ZM18.5228 11.4623L11.3228 4.46225L10.2772 5.53775L17.4772 12.5377L18.5228 11.4623ZM6.52279 18.3708L12.5228 12.5378L11.4772 11.4622L5.47721 17.2952L6.52279 18.3708ZM12.5228 11.4622L6.52279 5.62924L5.47721 6.70476L11.4772 12.5378L12.5228 11.4622Z"
+                  fill="#555"
+                />
+              </svg>
+              Agriculture
+            </p>
+          </div>
+        </div>
+
+        <div class="drone-training-buttons box-center mb32">
+          <button class="drone-training-btn-secondary flx45 fw6">
+            Get Quotes
+          </button>
+          <button class="drone-training-btn-primary flx45 fw6">
+            Get Best Price
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-help-section">
+      <h2>Need Help Choosing?</h2>
+      <p>
+        Not sure which drone is right for you? Our drone experts are here to
+        help you make the perfect choice.
+      </p>
+      <div class="faq-buttons">
+        <button class="btn primary">Chat with Expert</button>
+        <a href="tel:9953777320" class="btn outline">Schedule Call</a>
+      </div>
+    </section>
+
+    <section class="why-choose" data-aos="fade-up">
+      <div class="section-heading" data-aos="zoom-in">
+        <div class="testimonials-header">
+          <h2>What Our <span>Clients Say</span></h2>
+        </div>
+        <p class="tac">
+          Delivering trusted results with unmatched quality from classrooms to
+          skies
+        </p>
+      </div>
+
+      <div class="testimonial-slider-wrapper">
+        <button class="slider-btn prev-btn">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.7071 4.29289C12.0976 4.68342 12.0976 5.31658 11.7071 5.70711L6.41421 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H6.41421L11.7071 18.2929C12.0976 18.6834 12.0976 19.3166 11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 10.2929 19.7071L3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929L10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289Z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+
+        <div class="testimonial-slider">
+          <div class="testimonial-container" id="testimonialTrack">
+            <!-- CARD 1 -->
+            <div class="testimonial-card">
+              <div class="profile">
+                <img
+                  src="https://randomuser.me/api/portraits/men/133.jpg"
+                  alt="Sarah Johnson"
+                  onerror="handleImageError(this, 'Sarah Johnson')"
+                />
+                <div class="info tal">
+                  <h4>Sarah Johnson</h4>
+                  <p>CPL Student</p>
+                </div>
+              </div>
+              <div class="stars">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+              </div>
+              <div class="message-container">
+                <p class="message" id="message">
+                  "Flapone's drone services revolutionized our crop monitoring
+                  capabilities. Their team provided exceptional service and the
+                  data collected has optimized our operations significantly.
+                  Flapone's drone services revolutionized our crop monitoring
+                  capabilities. Their team provided exceptional service and the
+                  data collected has optimized our operations significantly."
+                </p>
+                <span class="read-more" onclick="toggleMessage()"
+                  >Read more</span
+                >
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="testimonial-card">
+              <div class="profile">
+                <img
+                  src="https://randomuser.me/api/portraits/men/2.jpg"
+                  alt="Michael Chen"
+                />
+                <div class="info tal">
+                  <h4>Capt. Nipun Singh</h4>
+                  <p>Current Student</p>
+                </div>
+              </div>
+              <div class="stars">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+              </div>
+              <p class="message">
+                "The pilot training program at Flapone exceeds all standards.
+                Their instructors are highly skilled and the practical scenarios
+                prepared our team for real-world operations."
+              </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="testimonial-card">
+              <div class="profile">
+                <img
+                  src="https://randomuser.me/api/portraits/women/3.jpg"
+                  alt="Emily Rodriguez"
+                />
+                <div class="info tal">
+                  <h4>Emily Rodriguez</h4>
+                  <p>Parent of Student</p>
+                </div>
+              </div>
+              <div class="stars">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#un-filled-star" />
+                </svg>
+              </div>
+              <p class="message">
+                "We purchased our drone fleet from Flapone and couldn't be
+                happier with the quality and ongoing support. Their technical
+                expertise is unmatched in the industry."
+              </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <a href="testimonial.html" class="testimonial-card box-center fdc">
+              <div>
+                <p class="message">Curious what others are saying?</p>
+                <span class="fc3 db tac">View More >> </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <button class="slider-btn next-btn">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq-container" id="faqs" data-aos="fade-up">
+        <div class="section-heading faq-header" data-aos="zoom-in">
+          <h2>Frequently Asked <span>Questions</span></h2>
+          <p class="lh20">
+            Find answers to the most commonly asked questions about our courses
+            and features.
+          </p>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            What are the eligibility criteria for CPL ground classes?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Students must be at least 17 years old and have completed 10+2
+              with Physics and Mathematics as subjects. A Class 2 Medical
+              Certificate from a DGCA approved doctor is also required before
+              joining.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            How long is the CPL ground course?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Our comprehensive CPL ground course typically takes 3-4 months to
+              complete, with classes held 5 days a week. The exact duration may
+              vary based on student progress and batch size.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            What is your batch size?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              We maintain small batch sizes of maximum 15 students to ensure
+              personalized attention and better learning outcomes. This allows
+              our instructors to focus on individual student needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            Do you provide study materials?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Yes, we provide comprehensive study materials including textbooks,
+              practice question banks, and digital resources. Our materials are
+              regularly updated to align with the latest DGCA exam patterns.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            What is the fee structure and are there installment options?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Our fee structure is competitive and we do offer installment
+              payment plans. We also provide guidance on aviation education
+              loans available through our banking partners. Please contact us
+              for the latest fee details.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            Do you provide placement assistance after completion?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Yes, we provide career counseling and placement assistance. Our
+              industry connections with various airlines and our alumni network
+              help students find opportunities after successful course
+              completion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="drone-featured-section">
+      <div class="section-heading" data-aos="zoom-in">
+        <h2>Related <span>Drones</span></h2>
+        <p class="lh20">Professional grade drones for every need</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="drone-product-tabs" data-aos="zoom-in">
+        <button class="drone-product-tab active" data-tab="all">All</button>
+        <button class="drone-product-tab" data-tab="consumer">Consumer</button>
+        <button class="drone-product-tab" data-tab="professional">
+          Professional
+        </button>
+        <button class="drone-product-tab" data-tab="enterprise">
+          Enterprise
+        </button>
+        <button class="drone-product-tab" data-tab="rascing">Racing</button>
+      </div>
+
+      <div class="w100 training-tab training-grid active" data-tab="product">
+        <div
+          class="product-sh-card prd-card highlighted pr"
+          data-aos="flip-left"
+        >
+          <span class="train-badge bg3 fc1">Most Popular</span>
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Drone-farmers-cover_1749790272.png"
+            alt="Drone Image"
+          />
+          <div class="p16 tal">
+            <div class="v-center jcsb mb8">
+              <div class="product-badge beginner">Beginner</div>
+              <div class="inst-rating v-center">
+                <svg
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="mr4"
+                >
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <span class="fs14 mt2 fw6">4.9</span>
+              </div>
+            </div>
+            <p class="lh24 fs20 fw7 ls1 mb8 tac">
+              DJI Mini 3 - Perfect for beginners
+            </p>
+            <div class="price box-center fdc">
+              <div class="v-center">
+                <span>₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <p class="lh22 lc-3 fs14 fc4">
+              The drone sector is rapidly expanding, not only in India but also
+              worldwide. This is attributable to progressions in artificial
+              intelligence, automation
+            </p>
+            <div class="mt12">
+              <p class="fs14 mb8 fc4">Includes:</p>
+              <ul class="prod-feature-list">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="v-center mt24">
+              <a href="#" class="btn-d1 tac">View Detail</a>
+              <a href="#" class="enroll-btn ml8 tac">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-sh-card" data-aos="flip-left">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Drone-legal-cover_1749115601.jpg"
+            alt="Drone Image"
+          />
+          <div class="p16 tal">
+            <div class="v-center jcsb mb8">
+              <div class="product-badge professional">Professional</div>
+              <div class="inst-rating v-center">
+                <svg
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="mr4"
+                >
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <span class="fs14 mt2 fw6">4.9</span>
+              </div>
+            </div>
+            <p class="lh24 fs20 fw7 ls1 mb8 tac">DJI Mavic 3 Enterprise</p>
+            <div class="price box-center fdc">
+              <div class="v-center">
+                <span>₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <p class="lh22 lc-3 fs14 fc4">
+              The drone sector is rapidly expanding, not only in India but also
+              worldwide. This is attributable to progressions in artificial
+              intelligence, automation
+            </p>
+            <div class="mt12">
+              <p class="fs14 mb8 fc4">Includes:</p>
+              <ul class="prod-feature-list">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="v-center mt24">
+              <a href="#" class="btn-d1 tac">View Detail</a>
+              <a href="#" class="enroll-btn ml8 tac">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-sh-card" data-aos="flip-left">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/13_1747994293.jpg"
+            alt="Drone Image"
+          />
+          <div class="p16 tal">
+            <div class="v-center jcsb mb8">
+              <div class="product-badge intermediate">Intermediate</div>
+              <div class="inst-rating v-center">
+                <svg
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="mr4"
+                >
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <span class="fs14 mt2 fw6">4.9</span>
+              </div>
+            </div>
+            <p class="lh24 fs20 fw7 ls1 mb8 tac">Autel EVO Lite+</p>
+            <div class="price box-center fdc">
+              <div class="v-center">
+                <span>₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <p class="lh22 lc-3 fs14 fc4">
+              The drone sector is rapidly expanding, not only in India but also
+              worldwide. This is attributable to progressions in artificial
+              intelligence, automation
+            </p>
+            <div class="mt12">
+              <p class="fs14 mb8 fc4">Includes:</p>
+              <ul class="prod-feature-list">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="v-center mt24">
+              <a href="#" class="btn-d1 tac">View Detail</a>
+              <a href="#" class="enroll-btn ml8 tac">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w100 training-tab drone-featured-grid">
+        <div
+          class="product-sh-card prd-card highlighted pr"
+          data-tab="consumer"
+        >
+          <span class="train-badge bg3 fc1">Most Popular</span>
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Drone-farmers-cover_1749790272.png"
+            alt="Drone Image"
+          />
+          <div class="p16 tal">
+            <div class="v-center jcsb mb8">
+              <div class="product-badge beginner">Beginner</div>
+              <div class="inst-rating v-center">
+                <svg
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="mr4"
+                >
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <span class="fs14 mt2 fw6">4.9</span>
+              </div>
+            </div>
+            <p class="lh22 fs16 fw7 ls1 mb8">
+              DJI Mini 3 - Perfect for beginners
+            </p>
+            <div class="price box-center fdc">
+              <div class="v-center">
+                <span>₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <p class="lh22 lc-3 fs14 fc4">
+              The drone sector is rapidly expanding, not only in India but also
+              worldwide. This is attributable to progressions in artificial
+              intelligence, automation
+            </p>
+            <div class="mt12">
+              <p class="fs14 mb8 fc4">Includes:</p>
+              <ul class="prod-feature-list">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="v-center mt24">
+              <a href="#" class="btn-d1 tac">View Detail</a>
+              <a href="#" class="enroll-btn ml8 tac">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-sh-card">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Drone-legal-cover_1749115601.jpg"
+            alt="Drone Image"
+          />
+          <div class="p16 tal">
+            <div class="v-center jcsb mb8">
+              <div class="product-badge professional">Professional</div>
+              <div class="inst-rating v-center">
+                <svg
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="mr4"
+                >
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <span class="fs14 mt2 fw6">4.9</span>
+              </div>
+            </div>
+            <p class="lh22 fs16 fw7 ls1 mb8">DJI Mavic 3 Enterprise</p>
+            <div class="price box-center fdc">
+              <div class="v-center">
+                <span>₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <p class="lh22 lc-3 fs14 fc4">
+              The drone sector is rapidly expanding, not only in India but also
+              worldwide. This is attributable to progressions in artificial
+              intelligence, automation
+            </p>
+            <div class="mt12">
+              <p class="fs14 mb8 fc4">Includes:</p>
+              <ul class="prod-feature-list">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="v-center mt24">
+              <a href="#" class="btn-d1 tac">View Detail</a>
+              <a href="#" class="enroll-btn ml8 tac">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-sh-card">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/13_1747994293.jpg"
+            alt="Drone Image"
+          />
+          <div class="p16 tal">
+            <div class="v-center jcsb mb8">
+              <div class="product-badge intermediate">Intermediate</div>
+              <div class="inst-rating v-center">
+                <svg
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="mr4"
+                >
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <span class="fs14 mt2 fw6">4.9</span>
+              </div>
+            </div>
+            <p class="lh22 fs16 fw7 ls1 mb8">Autel EVO Lite+</p>
+            <div class="price box-center fdc">
+              <div class="v-center">
+                <span>₹45,000</span>
+                <span class="drone-featured-old-price">₹95,000</span>
+              </div>
+            </div>
+            <p class="lh22 lc-3 fs14 fc4">
+              The drone sector is rapidly expanding, not only in India but also
+              worldwide. This is attributable to progressions in artificial
+              intelligence, automation
+            </p>
+            <div class="mt12">
+              <p class="fs14 mb8 fc4">Includes:</p>
+              <ul class="prod-feature-list">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+
+                  <p class="fw6 mr4">Mode:</p>
+                  <p class="">Online/Offline</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Timing:</p>
+                  <p class="">9:00 AM to 6:30 PM</p>
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -3.5 170 170"
+                    class="mr8"
+                    fill="none"
+                  >
+                    <use xlink:href="#tick" />
+                  </svg>
+                  <p class="fw6 mr4">Duration:</p>
+                  <p class="">45 Days</p>
+                </li>
+              </ul>
+            </div>
+            <div class="v-center mt24">
+              <a href="#" class="btn-d1 tac">View Detail</a>
+              <a href="#" class="enroll-btn ml8 tac">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-more box-center mt24">
+        <a href="#"> <button>Load More</button></a>
+      </div>
+    </section>
+
+    <section class="prodcut-bc">
+      <div class="breadcrumb-scroll">
+        <ul class="v-center breadcrumb-list">
+          <li class="fs14 ls1 fc4">Home</li>
+          <li class="fc4">/</li>
+          <li class="fs14 ls1 fc4">Drone Products</li>
+          <li class="fc4">/</li>
+          <li class="fs14 ls1 fc3">DJI Mini 4 - Perfect for beginners</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="deeper">
+        <div class="footer-section logo-info">
+          <a href="index.html">
+            <img
+              src="images/flapone-footer.png"
+              alt="FlapOne Logo"
+              class="f-logo"
+          /></a>
+          <p>
+            A joint venture with Airborne, empowering students to build
+            successful aviation careers regardless of academic background.
+            <a href="about.html"> <span class="fc3">Read more</span></a>
+          </p>
+          <div class="mt16">
+            <!-- <div class="df aifs">
+              <p class="mr12">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                    stroke="#ccc"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                    stroke="#ccc"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </p>
+              <p>
+                E-549, 2nd Floor, Ramphal Chowk, Sector-7, Dwarka, New
+                Delhi-110075
+              </p>
+            </div> -->
+            <div class="df aifs mt12">
+              <p class="mr12">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.27396 8.94048C3.01237 7.88621 6.8401 6 12 6C17.1599 6 20.9876 7.88621 22.726 8.94048C23.7251 9.54634 24.1355 10.6912 23.9609 11.7514L23.5032 14.5308C23.2353 16.157 21.704 17.2467 20.101 16.9518L17.6354 16.4982C16.5887 16.3056 15.8888 15.2984 16.0637 14.2365L16.2935 12.8413C15.7061 12.4933 14.3714 11.9088 12 11.9088C9.62863 11.9088 8.29388 12.4933 7.70655 12.8413L7.93635 14.2365C8.11123 15.2984 7.41126 16.3056 6.36463 16.4982L3.89895 16.9518C2.29601 17.2467 0.764683 16.157 0.49684 14.5308L0.0390736 11.7514C-0.135542 10.6912 0.274923 9.54635 1.27396 8.94048ZM12 7.96961C7.30768 7.96961 3.82761 9.68804 2.2745 10.6299C2.04751 10.7676 1.8986 11.061 1.95897 11.4276L2.41674 14.207C2.50602 14.749 3.01646 15.1123 3.55077 15.014L6.01645 14.5603L5.76984 13.063C5.66906 12.4511 5.85834 11.6997 6.51793 11.2691C7.34118 10.7317 9.06148 9.93922 12 9.93922C14.9385 9.93922 16.6588 10.7317 17.4821 11.2691C18.1417 11.6997 18.3309 12.4511 18.2302 13.063L17.9836 14.5603L20.4492 15.014C20.9835 15.1123 21.494 14.749 21.5833 14.207L22.041 11.4276C22.1014 11.061 21.9525 10.7676 21.7255 10.6299C20.1724 9.68804 16.6923 7.96961 12 7.96961Z"
+                    fill="#333"
+                  />
+                </svg>
+              </p>
+              <a href="tel:7303017062"><p>7303-017-062</p></a>
+            </div>
+            <div class="df aifs mt12">
+              <p class="mr12">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#333">
+                  <use xlink:href="#email" />
+                </svg>
+              </p>
+              <a href="mailto:info@flapone.com"><p>info@flapone.com</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul class="two-column">
+            <li><a href="about-us.html"> About Us</a></li>
+            <li><a href="about-us.html"> Branches</a></li>
+            <li><a href="about-us.html">Teaching Staffs</a></li>
+            <li><a href="about-us.html">Blog</a></li>
+            <li><a href="about-us.html">Awards</a></li>
+            <li><a href="about-us.html">Success Stories</a></li>
+            <li><a href="about-us.html">Testimonials</a></li>
+            <li><a href="about-us.html">Sitemap</a></li>
+            <li><a href="about-us.html">Aircraft Training</a></li>
+            <li><a href="about-us.html">Drone Training</a></li>
+            <li><a href="about-us.html">Drone Services</a></li>
+            <li><a href="about-us.html">Buy Drones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section support-links">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="about-us.html"> Terms and Conditions</a></li>
+            <li><a href="about-us.html"> Privacy Policy</a></li>
+            <li><a href="about-us.html">Refund Policy</a></li>
+            <li><a href="about-us.html">Help & FAQ</a></li>
+            <li><a href="about-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">Partner With Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section social-follow">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <div class="social-icons v-center">
+              <a
+                href="https://www.google.com/search?authuser=0&amp;gl=in&amp;hl=en&amp;output=search&amp;q=Flapone+Aviation+Private+Limited&amp;ludocid=11163345003520055109&amp;gsas=1&amp;lsig=AB86z5V9Lp5cCLXOy_PIogziqui1&amp;ved=1i%3A2%2Ct%3A109124%2Ce%3A1%2Cp%3AHUr1YZ6sKJCf4-EP-JG4yA4%3A2"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#google"></use>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/flapone" target="_blank">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#fb"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/flaponeaviation"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="-3.5 0 19 19"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#linkedin"></use></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/flaponeaviation/"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#insta"></use>
+                </svg>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@flapone_aviation/"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 -0.5 25 25"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.168 19.0028C20.4724 19.0867 22.41 17.29 22.5 14.9858V9.01982C22.41 6.71569 20.4724 4.91893 18.168 5.00282H6.832C4.52763 4.91893 2.58998 6.71569 2.5 9.01982V14.9858C2.58998 17.29 4.52763 19.0867 6.832 19.0028H18.168Z"
+                    stroke="#fff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.008 9.17784L15.169 11.3258C15.3738 11.4454 15.4997 11.6647 15.4997 11.9018C15.4997 12.139 15.3738 12.3583 15.169 12.4778L12.008 14.8278C11.408 15.2348 10.5 14.8878 10.5 14.2518V9.75184C10.5 9.11884 11.409 8.77084 12.008 9.17784Z"
+                    stroke="#fff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+          <h3>Certified By</h3>
+          <div class="approved">
+            <div class="seal-dgca mt8 df">
+              <a
+                href="https://www.flapone.com/awards-recognitions/flapone-aviation-now-an-authorized-remote-pilot-training-organization-rpto"
+                class="cp"
+                target="_blank"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets/images/seal-dgca.png"
+                  alt="Approved by DGCA"
+                  title="Approved by the Directorate General of Civil Aviation of India"
+                  class=""
+                />
+              </a>
+              <a
+                href="https://www.flapone.com/awards-recognitions/flapone-aviation-receives-prestigious-certificate-of-recognition-from-the-government-of-india"
+                class="cp df h100"
+                target="_blank"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets/images/dpiit.jpg"
+                  alt="Recognized by DPIIT"
+                  title="Recognized by the Department for Promotion of Industry and Internal Trade"
+                  class=""
+              /></a>
+              <img
+                src="https://www.hlimg.com/images/flapone-crm/assets/images/skill-india.png"
+                alt="Skill-India"
+                title="Registered on Skill-India"
+                class=""
+              />
+              <a
+                href="https://www.flapone.com/awards-recognitions/proudly-announcing-flapone-aviation-is-now-a-registered-small-business-in-india"
+                class="cp df h100"
+                target="_blank"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets/images/msme.jpg"
+                  alt="MSME Certified"
+                  title="MSME Certified"
+                  class="ml8"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="v-center jcsb copy-right">
+        <div class="payment-section card-accept">
+          <h3 class="tal fw6">We Accept</h3>
+          <div class="payments">
+            <img src="images/one.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/two.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/three.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/four.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/five.png" alt="Visa Card" title="Visa Card" />
+            <img
+              src="images/six.svg"
+              alt="Visa Card"
+              title="Visa Card"
+              class="bg1"
+            />
+          </div>
+        </div>
+
+        <div class="copyright" id="copyrightText"></div>
+      </div>
+    </footer>
+
+    <div class="dn">
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 -3.5 170 170"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="tick">
+          <path
+            d="M142.196 30.4125C142.586 30.0637 142.897 29.6356 143.109 29.1567C143.32 28.6778 143.427 28.1592 143.422 27.6357C143.417 27.1122 143.3 26.5959 143.079 26.1213C142.858 25.6467 142.538 25.2248 142.141 24.8838C141.722 24.5249 141.307 24.1678 140.895 23.8127C137.751 21.1093 134.5 18.3102 131.1 15.9225C105.123 -2.36044 78.1316 -2.4633 50.8803 7.23287C26.2068 16.0055 10.3619 33.5563 3.77909 59.3882C-3.56415 88.249 2.86618 113.71 22.9048 135.073C23.4261 135.625 23.9582 136.177 24.4895 136.704C35.2539 147.469 48.6614 154.115 59.2847 158.739C63.8445 160.731 87.2404 163.149 93.5707 162.206C131.19 156.588 155.946 135.37 164.569 99.8725C166.215 92.9194 167.035 85.7962 167.011 78.6508C166.974 71.1466 165.712 63.6988 163.275 56.6012C163.097 56.0703 162.805 55.5851 162.418 55.1805C162.031 54.7759 161.56 54.4618 161.037 54.2606C160.515 54.0595 159.954 53.9764 159.396 54.0171C158.838 54.0579 158.295 54.2216 157.808 54.4965L157.706 54.5547C156.931 54.9984 156.336 55.7005 156.027 56.5381C155.717 57.3757 155.712 58.2954 156.012 59.1364C158.212 65.2371 159.334 71.674 159.327 78.1592C159.251 85.9394 158.198 93.6792 156.192 101.197C150.248 122.8 136.038 138.545 112.75 149.315C89.0741 160.65 55.1215 149.19 46.0879 143.226C36.1031 136.4 27.3663 127.908 20.2596 118.121C9.11418 102.34 6.61369 79.6587 12.6028 58.9229C15.4055 49.3489 20.3036 40.5185 26.9421 33.0722C33.5806 25.6259 41.793 19.7503 50.9838 15.8714C74.8941 5.93474 98.8852 4.18192 122.285 19.0635C125.422 21.061 133.422 27.3424 137.465 30.5501C138.143 31.0882 138.99 31.3691 139.855 31.3432C140.721 31.3172 141.549 30.986 142.194 30.4082L142.196 30.4125Z"
+            fill="#22c55e"
+          />
+          <path
+            d="M74.6287 104.313C76.2312 102.79 77.1115 102.019 77.9173 101.177C103.753 74.1855 132.047 49.8851 160.508 25.7727C161.584 24.8619 162.685 23.7 163.958 23.3737C165.493 22.9815 167.996 23.4326 168.682 24.2661C169.133 24.8821 169.418 25.6035 169.509 26.3612C169.601 27.1189 169.496 27.8875 169.206 28.5932C168.537 30.3474 166.907 31.8498 165.429 33.1629C156.607 41.0019 147.538 48.5708 138.872 56.5716C120.756 73.3024 102.756 90.1576 84.8704 107.137C77.0334 114.561 74.0173 114.862 66.8059 106.929C62.0589 101.705 47.7328 84.0973 43.3455 78.5495C42.7256 77.6872 42.1735 76.7781 41.6941 75.8305C40.7045 74.0756 40.0576 72.1419 42.0246 70.7814C44.2158 69.2662 45.7707 70.8473 47.0696 72.4937C48.384 74.1607 49.5048 75.9916 50.9121 77.5713C55.2811 82.4737 69.908 99.1421 74.6287 104.313Z"
+            fill="#22c55e"
+          />
+        </symbol>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="chevron-left" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M14.5 17L9.5 12L14.5 7"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="chevron-right" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M9.5 7L14.5 12L9.5 17"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="full-star" viewBox="-6.4 -6.4 76.80 76.80">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              fill="#ffa500"
+              d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z"
+            />
+          </g>
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="half-star" viewBox="-3.6 -3.6 43.20 43.20">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <title>half-star-solid</title>
+            <path
+              class="clr-i-solid clr-i-solid-path-1"
+              d="M34,16.78a2.22,2.22,0,0,0-1.29-4l-9-.34a.23.23,0,0,1-.2-.15L20.4,3.89a2.22,2.22,0,0,0-4.17,0l-3.1,8.43a.23.23,0,0,1-.2.15l-9,.34a2.22,2.22,0,0,0-1.29,4l7.06,5.55a.23.23,0,0,1,.08.24L7.35,31.21a2.22,2.22,0,0,0,3.38,2.45l7.46-5a.22.22,0,0,1,.25,0l7.46,5a2.2,2.2,0,0,0,2.55,0,2.2,2.2,0,0,0,.83-2.4l-2.45-8.64a.22.22,0,0,1,.08-.24ZM24.9,23.11l2.45,8.64A.22.22,0,0,1,27,32l-7.46-5a2.21,2.21,0,0,0-1.24-.38h0V4.44h0a.2.2,0,0,1,.21.15L21.62,13a2.22,2.22,0,0,0,2,1.46l9,.34a.22.22,0,0,1,.13.4l-7.06,5.55A2.21,2.21,0,0,0,24.9,23.11Z"
+            />
+            <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+          </g>
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="star" viewBox="-2.4 -2.4 28.80 28.80">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+      </svg>
+
+      <svg
+        fill="red"
+        width="800px"
+        height="800px"
+        viewBox="-4 0 32 32"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="twitter">
+          <path
+            d="M24 8.531c-0.688 1-1.5 1.844-2.469 2.563 0.031 0.219 0.031 0.438 0.031 0.656 0 6.5-4.938 14-14 14-2.781 0-5.375-0.844-7.563-2.219 0.375 0.031 0.781 0.094 1.188 0.094 2.313 0 4.406-0.813 6.094-2.125-2.188-0.031-3.969-1.5-4.594-3.438 0.281 0.063 0.625 0.094 0.938 0.094 0.438 0 0.906-0.063 1.313-0.188-2.281-0.438-3.969-2.406-3.969-4.781v-0.063c0.688 0.344 1.406 0.563 2.219 0.594-1.313-0.906-2.188-2.406-2.188-4.094 0-0.906 0.25-1.75 0.656-2.5 2.438 2.969 6.063 4.969 10.156 5.156-0.063-0.344-0.125-0.75-0.125-1.125 0-2.719 2.188-4.938 4.906-4.938 1.438 0 2.719 0.625 3.625 1.594 1.125-0.219 2.156-0.656 3.094-1.219-0.344 1.156-1.125 2.156-2.125 2.75 1-0.125 1.906-0.406 2.813-0.813z"
+          ></path>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="tick">
+          <path
+            d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+            class="mr8"
+          />
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="right-arrow-black" viewBox="0 0 492.004 492.004">
+          <g>
+            <g>
+              <path
+                d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+              c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+              c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+              c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+              />
+            </g>
+          </g>
+        </symbol>
+      </svg>
+
+      <svg
+        width="800px"
+        height="800px"
+        viewBox="0 0 24 24"
+        id="curve-arrow-right-8"
+        data-name="Flat Color"
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon flat-color"
+      >
+        <symbol id="curve-arrow">
+          <path
+            id="primary"
+            d="M21.71,14.29l-3-3a1,1,0,0,0-1.42,1.42L18.59,14h-3.1A12.14,12.14,0,0,1,4,5.68a1,1,0,0,0-1.9.64A14.14,14.14,0,0,0,15.49,16h3.1l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3-3A1,1,0,0,0,21.71,14.29Z"
+          ></path>
+        </symbol>
+      </svg>
+
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="calendar">
+          <path
+            d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+            stroke="#ff6d60"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px">
+        <symbol id="cross" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M7 17L16.8995 7.10051"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7 7.00001L16.8995 16.8995"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="24px"
+        height="24px"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="fb">
+          <path
+            d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="24px"
+        height="24px"
+        viewBox="-3.5 0 19 19"
+        xmlns="http://www.w3.org/2000/svg"
+        class="cf-icon-svg"
+      >
+        <symbol id="linkedin">
+          <path
+            d="M3.335 6.498a1.152 1.152 0 0 1-1.248 1.148h-.015a1.15 1.15 0 1 1 .03-2.295 1.147 1.147 0 0 1 1.233 1.147zM.982 8.553h2.206v6.637H.982zm10.165 2.83v3.807H8.941v-3.55c0-.893-.319-1.502-1.12-1.502a1.21 1.21 0 0 0-1.13.807 1.516 1.516 0 0 0-.073.538v3.708H4.41s.03-6.017 0-6.639h2.21v.94l-.016.023h.015V9.49a2.19 2.19 0 0 1 1.989-1.095c1.451 0 2.54.949 2.54 2.988z"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="48px"
+        height="48px"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="insta">
+          <path
+            d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"
+          />
+          <path
+            d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="arrow-forward">
+          <path
+            d="M16 7L21 12M21 12L16 17M21 12H3"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="user">
+          <path
+            d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="800px"
+        height="800px"
+        viewBox="0 0 24 24"
+        data-name="Flat Color"
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon flat-color"
+      >
+        <symbol id="google">
+          <path
+            id="primary"
+            d="M12,22A10,10,0,0,1,2,12,10,10,0,0,1,12,2a9.9,9.9,0,0,1,7.07,2.93,1,1,0,0,1,0,1.42,1,1,0,0,1-1.41,0A7.91,7.91,0,0,0,12,4a8,8,0,0,0-8,8,8,8,0,0,0,8,8,8,8,0,0,0,7.94-7H12a1,1,0,0,1,0-2h9a1,1,0,0,1,1,1A10,10,0,0,1,12,22Z"
+            style="fill: #333"
+          ></path>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 17.7083C4.15875 16.0604 3 13.6655 3 11C3 6.02944 7.02944 2 12 2C16.9706 2 21 6.02944 21 11C21 13.6655 19.8412 16.0604 18 17.7083M7.80238 13.7177C7.29479 12.9353 7 12.0021 7 11C7 8.23858 9.23858 6 12 6C14.7614 6 17 8.23858 17 11C17 12.0008 16.706 12.9329 16.1996 13.7147M12 22C10.8954 22 10 21.1046 10 20V18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18V20C14 21.1046 13.1046 22 12 22ZM13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11Z"
+          stroke="#f4836c"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
+      <svg
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="map">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M9 20L3 17V4L9 7M9 20L15 17M9 20V7M15 17L21 20V7L15 4M15 17V4M9 7L15 4"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="-2.4 -2.4 28.80 28.80"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        transform="rotate(0)"
+      >
+        <symbol id="email">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+      </svg>
+      <svg
+        fill="#ffffff"
+        width="30px"
+        height="30px"
+        viewBox="-3.2 -3.2 38.40 38.40"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="phone_number">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <title>phone</title>
+            <path
+              d="M21.999 4h-12c-1.104 0-1.999 0.896-1.999 2v20c0 1.104 0.895 2 1.999 2h12c1.105 0 2.001-0.896 2.001-2v-20c0-1.104-0.896-2-2.001-2zM13 5h5l0.062 1h-5.062v-1zM15.979 26.5c-0.552 0-1-0.447-1-1s0.448-1 1-1c0.553 0 1 0.447 1 1s-0.448 1-1 1zM21.999 23h-12l0.021-16h11.979v16z"
+            />
+          </g>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="filled-star">
+          <path
+            d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+            fill="#f4836c"
+          />
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="un-filled-star">
+          <path
+            d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+            stroke="#ccc"
+            stroke-width="1.5"
+          />
+        </symbol>
+      </svg>
+      <svg
+        fill="#fff"
+        width="24px"
+        height="24px"
+        viewBox="-2 0 19 19"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="gov">
+          <path
+            d="M14.427 14.75v.491H.573v-.49a.476.476 0 0 1 .475-.476h.411a.497.497 0 0 1-.002-.048v-.443a.476.476 0 0 1 .475-.475h.41V9.692h-.307a.554.554 0 1 1 0-1.108h10.963a.554.554 0 1 1 0 1.108h-.292v3.617h.362a.476.476 0 0 1 .475.475v.443a.364.364 0 0 1-.003.048h.412a.476.476 0 0 1 .475.475zm-1.72-7.043a5.182 5.182 0 1 0-10.364 0zm-9.188 5.602h1.109v-3.062a.554.554 0 1 0-1.109 0zm2.294-3.053v3.053h1.109v-3.053a.554.554 0 1 0-1.109 0zm2.294.008v3.045h1.109v-3.045a.554.554 0 1 0-1.109 0zm2.294.008v3.037h1.109v-3.037a.554.554 0 0 0-1.109 0z"
+          />
+        </symbol>
+      </svg>
+    </div>
+    <script src="/js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: false,
+      });
+      window.addEventListener("scroll", function () {
+        var fnavbar = document.getElementById("fixed-navbar");
+        var flap_navbar = document.getElementById("header-flapone");
+        if (fnavbar !== null) {
+          if (window.pageYOffset > 0) {
+            fnavbar.style.display = "block";
+            flap_navbar.style.display = "none";
+          } else {
+            fnavbar.style.display = "none";
+            flap_navbar.style.display = "flex";
+          }
+        }
+      });
+
+      function checkOverflow() {
+        const thumbContainer = document.getElementById("thumbContainer");
+        const scrollLeftBtn = document.getElementById("scrollLeft");
+        const scrollRightBtn = document.getElementById("scrollRight");
+
+        if (thumbContainer.scrollWidth > thumbContainer.clientWidth) {
+          scrollLeftBtn.style.display = "inline-flex";
+          scrollRightBtn.style.display = "inline-flex";
+          thumbContainer.classList.remove("center-if-no-scroll");
+        } else {
+          scrollLeftBtn.style.display = "none";
+          scrollRightBtn.style.display = "none";
+          thumbContainer.classList.add("center-if-no-scroll");
+        }
+      }
+      function imagesChagner(event) {
+        const clickedThumb = event.target.closest(".detail-thumb-item");
+        if (!clickedThumb) return;
+
+        const mainContainer = document.querySelector(".img-box");
+        const mainImg = document.getElementById("mainImage");
+        const mainVideo = document.getElementById("mainVideo");
+        const mainIframe = document.getElementById("mainIframe");
+
+        const type = clickedThumb.dataset.type;
+        const src = clickedThumb.dataset.src;
+
+        // Reset active classes
+        document
+          .querySelectorAll(".detail-thumb-item")
+          .forEach((item) => item.classList.remove("active"));
+        clickedThumb.classList.add("active");
+
+        // Remove previous media
+        mainImg?.remove();
+        mainVideo?.remove();
+        mainIframe?.remove();
+
+        if (type === "video") {
+          const videoEl = document.createElement("video");
+          videoEl.id = "mainVideo";
+          videoEl.className = "w100 fade-image media-fill";
+          videoEl.src = src;
+          videoEl.controls = true;
+          videoEl.autoplay = true;
+          videoEl.muted = true;
+          videoEl.playsInline = true;
+          mainContainer.appendChild(videoEl);
+        } else if (type === "youtube") {
+          const ytId = extractYouTubeID(src);
+          const iframe = document.createElement("iframe");
+          iframe.id = "mainIframe";
+          iframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&rel=0&showinfo=0`;
+          iframe.frameBorder = "0";
+          iframe.allow = "autoplay; encrypted-media";
+          iframe.allowFullscreen = true;
+          iframe.className = "w100 fade-image media-fill";
+          mainContainer.appendChild(iframe);
+        } else {
+          const img = document.createElement("img");
+          img.id = "mainImage";
+          img.className = "w100 fade-image media-fill";
+          img.src = src;
+          mainContainer.appendChild(img);
+        }
+      }
+
+      // Helper to extract YouTube video ID
+      function extractYouTubeID(url) {
+        const regex = /(?:youtube\.com.*(?:\/|v=)|youtu\.be\/)([^?&]+)/;
+        const match = url.match(regex);
+        return match ? match[1] : null;
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const activeImg = document.querySelector(
+          ".detail-thumb-item.active img"
+        );
+        if (activeImg) {
+          document.getElementById("mainImage").src = activeImg.src;
+        }
+      });
+
+      function scrollThumbnails(amount) {
+        const container = document.getElementById("thumbContainer");
+        container.scrollBy({ left: amount, behavior: "smooth" });
+      }
+      window.addEventListener("DOMContentLoaded", checkOverflow);
+      window.addEventListener("resize", checkOverflow);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const originalButtons = document.querySelector(
+          ".drone-training-buttons"
+        );
+        const fixedButtons = document.querySelector(".fixed-button");
+
+        function checkVisibility() {
+          const rect = originalButtons.getBoundingClientRect();
+          const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+          if (isVisible) {
+            fixedButtons.style.display = "none";
+          } else {
+            fixedButtons.style.display = "flex";
+          }
+
+          // Check on scroll and on resize
+          window.addEventListener("scroll", checkVisibility);
+          window.addEventListener("resize", checkVisibility);
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const year = new Date().getFullYear();
+        document.getElementById(
+          "copyrightText"
+        ).textContent = `© ${year} Flapone Aviation. All rights reserved.`;
+      });
+    </script>
+  </body>
+</html>

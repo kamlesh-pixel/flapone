@@ -1,0 +1,2845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flapone Drones</title>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="index.html" style="height: 100%">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets/images/flapone-logo-new.png"
+            alt="FlapOne Avaition"
+            class=""
+        /></a>
+      </div>
+
+      <nav>
+        <a href="drone-training.html">Drone Training</a>
+        <a href="drone-product.html">Drone Products</a>
+        <a href="drone-services.html">Drone Services</a>
+        <a href="aircraft-training.html">Aircraft Training </a>
+        <a href="#" target="_blank"
+          ><button class="contact-btn">Contact Us</button></a
+        >
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <h2 class="tac mb16">FlapOne <span>Aviation</span></h2>
+      <a href="drone-training.html">Drone Training</a>
+      <a href="drone-product.html">Drone Products</a>
+      <a href="drone-services.html">Drone Services</a>
+      <a href="aircraft-training.html">Aircraft Training </a>
+
+      <a href="#" target="_blank" class="cta-btn">Contact Us</a>
+    </div>
+    <div class="overlay"></div>
+
+    <section class="hero hero-aircraft">
+      <div class="hero-content">
+        <div class="badge-wrap">
+          <div class="drone-training-badge">100% DGCA Exam Success Rate</div>
+        </div>
+        <h1 class="hero-header">
+          <span class="text-animate">Take Flight with Professional</span>
+          <span class="highlight">Aircraft Training</span>
+        </h1>
+        <div class="flx66">
+          <p class="lh28 fs18 ls1">
+            Led by an instructors with 25+ years of experience and thousands of
+            success stories. Small batch sizes, personalized attention,
+            career-focused training.
+          </p>
+        </div>
+
+        <div class="drone-hero-stats mt32 fww">
+          <div class="drone-hero-stat">
+            <h3 class="fc3">1200+</h3>
+            <p>Pilots Trained</p>
+          </div>
+
+          <div class="drone-hero-stat">
+            <h3 class="fc3">50+</h3>
+            <p>Placements</p>
+          </div>
+          <div class="drone-hero-stat">
+            <h3 class="fc3">25+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="drone-hero-stat">
+            <h3 class="fc3">95%</h3>
+            <p>Success Rate</p>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#courses">
+            <button class="primary-btn box-center">Explore Courses 
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml8"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button></a
+          >
+          <button class="secondary-btn">Book Free Counseling</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="drone-training-container lg1">
+      <div class="drone-training-left">
+       
+        <div class="drone-training-badge">DGCA Certified</div>
+        <div class="drone-training-badge">Government Approved</div>
+        <h1 class="drone-training-title">Aircraft Training Programs</h1>
+        <p class="drone-training-desc">
+          Led by an instructors with 25+ years of experience and thousands of
+          success stories. Small batch sizes, personalized attention,
+          career-focused training.
+        </p>
+        <div class="drone-hero-stats fww">
+          <div class="drone-hero-stat">
+            <h3 class="fc3">1200+</h3>
+            <p>Pilots Trained</p>
+          </div>
+
+          <div class="drone-hero-stat">
+            <h3 class="fc3">50+</h3>
+            <p>Placements</p>
+          </div>
+          <div class="drone-hero-stat">
+            <h3 class="fc3">25+</h3>
+            <p>Experience</p>
+          </div>
+          <div class="drone-hero-stat">
+            <h3 class="fc3">95%</h3>
+            <p>Success Rate</p>
+          </div>
+        </div>
+        <div class="drone-training-buttons">
+          <button class="drone-training-btn-primary">Enroll Now</button>
+          <button class="drone-training-btn-secondary">
+            Talk to Counselor
+          </button>
+        </div>
+      </div>
+
+      <div class="drone-training-right">
+        <div class="drone-training-video" id="video-container">
+          <img src="images/dt.avif" alt="Drone" />
+          <div class="drone-training-play-button" onclick="playYouTubeVideo()">
+            &#9658;
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="about-section" class="about-detail wrapper dp">
+      <div id="about-text" class="less-more-text lh24 more">
+        <p>
+          <span style="font-size: 24px" class="fw6 fc2"
+            >About Aircraft Pilot Training</span
+          >
+        </p>
+        <p>
+          <span
+            >It is quite common to see drones in both commercial and
+            recreational spaces. With their increasing popularity in
+            agriculture, logistics, defence and cinematography,
+            <strong>drone pilot training</strong> is mandatory for a person
+            aiming to become a drone pilot. Enrolling in a
+            <strong>drone certificate course</strong> guarantees that all the
+            industry standards are met and that one is compliant with aviation
+            laws.</span
+          >
+        </p>
+        <p>
+          <span
+            >It is quite common to see drones in both commercial and
+            recreational spaces. With their increasing popularity in
+            agriculture, logistics, defence and cinematography,
+            <strong>drone pilot training</strong> is mandatory for a person
+            aiming to become a drone pilot. Enrolling in a
+            <strong>drone certificate course</strong> guarantees that all the
+            industry standards are met and that one is compliant with aviation
+            laws.</span
+          >
+        </p>
+      </div>
+      <span id="toggle-btn" class="read-more-btn">Read More</span>
+    </section>
+
+    <section class="drone-training-benefits-section">
+      <div class="drone-training-benefits-container">
+        <div class="section-heading" data-aos="zoom-in">
+          <h2>Why Learn to <span>Fly Drones?</span></h2>
+          <p>Discover the endless possibilities of drone technology</p>
+        </div>
+
+        <div class="drone-training-benefits-cards fww" data-aos="zoom-in">
+          <div class="drone-training-benefit-card" data-aos="fl">
+            <div class="drone-training-benefit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-graduation-cap"
+                data-lov-id="src/pages/Index.tsx:167:20"
+                data-lov-name="GraduationCap"
+                data-component-path="src/pages/Index.tsx"
+                data-component-line="167"
+                data-component-file="Index.tsx"
+                data-component-name="GraduationCap"
+                data-component-content="%7B%7D"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                ></path>
+                <path d="M22 10v6"></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </svg>
+            </div>
+            <h3>25+ Years of Teaching Excellence</h3>
+            <p>
+              Learn from Capt. Navrang Singh, having more than 25 years of
+              experience training India's finest pilots. His expertise
+              translates to your success.
+            </p>
+          </div>
+
+          <div class="drone-training-benefit-card">
+            <div class="drone-training-benefit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users"
+                data-lov-id="src/pages/Index.tsx:172:20"
+                data-lov-name="Users"
+                data-component-path="src/pages/Index.tsx"
+                data-component-line="172"
+                data-component-file="Index.tsx"
+                data-component-name="Users"
+                data-component-content="%7B%7D"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Small Batch Sizes</h3>
+            <p>
+              With 25 students per batch, we ensure personalized attention,
+              doubt clearing, and a learning pace that adapts to your needs.
+            </p>
+          </div>
+
+          <div class="drone-training-benefit-card">
+            <div class="drone-training-benefit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-target"
+                data-lov-id="src/pages/Index.tsx:177:20"
+                data-lov-name="Target"
+                data-component-path="src/pages/Index.tsx"
+                data-component-line="177"
+                data-component-file="Index.tsx"
+                data-component-name="Target"
+                data-component-content="%7B%7D"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Exam-Focused Curriculum</h3>
+            <p>
+              Our curriculum is strategically designed to cover the DGCA
+              syllabus with a focus on commonly tested concepts and exam
+              strategies.
+            </p>
+          </div>
+          <div class="drone-training-benefit-card">
+            <div class="drone-training-benefit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check-big"
+                data-lov-id="src/pages/Index.tsx:182:20"
+                data-lov-name="CheckCircle"
+                data-component-path="src/pages/Index.tsx"
+                data-component-line="182"
+                data-component-file="Index.tsx"
+                data-component-name="CheckCircle"
+                data-component-content="%7B%7D"
+              >
+                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                <path d="m9 11 3 3L22 4"></path>
+              </svg>
+            </div>
+            <h3>Proven Track Record</h3>
+            <p>
+              100% of our dedicated students pass DGCA exams in their first
+              attempt. Our methodology has been refined over decades of success.
+            </p>
+          </div>
+          <div class="drone-training-benefit-card">
+            <div class="drone-training-benefit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-book"
+                data-lov-id="src/pages/Index.tsx:187:20"
+                data-lov-name="Book"
+                data-component-path="src/pages/Index.tsx"
+                data-component-line="187"
+                data-component-file="Index.tsx"
+                data-component-name="Book"
+                data-component-content="%7B%7D"
+              >
+                <path
+                  d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+                ></path>
+              </svg>
+            </div>
+            <h3>Comprehensive Study Materials</h3>
+            <p>
+              Get access to meticulously created study guides, question banks,
+              and digital resources that simplify complex aviation concepts.
+            </p>
+          </div>
+          <div class="drone-training-benefit-card">
+            <div class="drone-training-benefit-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart-handshake"
+                data-lov-id="src/pages/Index.tsx:192:20"
+                data-lov-name="HeartHandshake"
+                data-component-path="src/pages/Index.tsx"
+                data-component-line="192"
+                data-component-file="Index.tsx"
+                data-component-name="HeartHandshake"
+                data-component-content="%7B%7D"
+              >
+                <path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path>
+                <path
+                  d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"
+                ></path>
+                <path d="m18 15-2-2"></path>
+                <path d="m15 18-2-2"></path>
+              </svg>
+            </div>
+            <h3>Career Guidance & Support</h3>
+            <p>
+              We don't just teach; we mentor. Get guidance on aircraft type
+              ratings, job applications, interviews, and industry connections.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="training-section">
+      <div class="section-heading" data-aos="zoom-in">
+        <h2>Our <span>Training Programs</span></h2>
+        <p>Choose the perfect course for your aircraft piloting journey</p>
+      </div>
+
+      <div class="training-grid">
+        <div class="training-card" data-aos="flip-left">
+          <div class="training-header-row">
+            <h3 class="tac">Commercial Drone Operations</h3>
+          </div>
+          <div class="price box-center fdc">
+            <div class="v-center">
+              <span>₹45,000</span>
+              <span class="drone-featured-old-price">₹95,000</span>
+            </div>
+          </div>
+          <p class="subtitle">
+            Advanced training for commercial drone operations and surveying
+          </p>
+          <p class="fs14 mb8 fc4">Highlights:</p>
+          <ul class="feature-list">
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+
+              <p class="fw6 mr4">Mode:</p>
+              <p class="">Online/Offline</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Timing:</p>
+              <p class="">9:00 AM to 6:30 PM</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Duration:</p>
+              <p class="">45 Days</p>
+            </li>
+          </ul>
+          <div class="v-center jcsb">
+            <a href="#" class="btn-d1 mr8 tac">Learn More</a>
+            <a href="#" class="enroll-btn tac">Enroll Now</a>
+          </div>
+        </div>
+        <div class="training-card tab-content highlighted" data-aos="flip-left">
+          <span class="train-badge bg3 fc1">Most Popular</span>
+
+          <div class="training-header-row">
+            <h3 class="tac">Basic Drone Pilot Training TTT</h3>
+          </div>
+          <div class="price box-center fdc">
+            <div class="v-center">
+              <span>₹25,000</span>
+              <span class="drone-featured-old-price">₹95,000</span>
+            </div>
+          </div>
+
+          <p class="subtitle">
+            Perfect for beginners who want to start their drone piloting journey
+          </p>
+          <p class="fs14 mb8 fc4">Highlights:</p>
+          <ul class="feature-list">
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+
+              <p class="fw6 mr4">Mode:</p>
+              <p class="">Online/Offline</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Timing:</p>
+              <p class="">9:00 AM to 6:30 PM</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Duration:</p>
+              <p class="">45 Days</p>
+            </li>
+          </ul>
+          <div class="v-center jcsb">
+            <a href="#" class="btn-d1 tac">Learn More</a>
+            <a href="#" class="enroll-btn tac ml8">Enroll Now</a>
+          </div>
+        </div>
+        <div class="training-card" data-aos="flip-left">
+          <div class="training-header-row">
+            <h3 class="tac">Drone Photography & Videography</h3>
+          </div>
+          <div class="price box-center fdc">
+            <div class="v-center">
+              <span>₹18,000</span>
+              <span class="drone-featured-old-price">₹95,000</span>
+            </div>
+          </div>
+          <p class="subtitle">
+            Specialized course for aerial photography and cinematography
+          </p>
+          <p class="fs14 mb8 fc4">Highlights:</p>
+          <ul class="feature-list">
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+
+              <p class="fw6 mr4">Mode:</p>
+              <p class="">Online/Offline</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Timing:</p>
+              <p class="">9:00 AM to 6:30 PM</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Duration:</p>
+              <p class="">45 Days</p>
+            </li>
+          </ul>
+          <div class="v-center jcsb">
+            <a href="#" class="btn-d1 mr8 tac">Learn More</a>
+            <a href="#" class="enroll-btn tac">Enroll Now</a>
+          </div>
+        </div>
+        <div class="training-card" data-aos="flip-left">
+          <div class="training-header-row">
+            <h3 class="tac">Enterprise Drone Management</h3>
+          </div>
+          <div class="price box-center fdc">₹75,000</div>
+          <p class="subtitle">
+            Full-scale drone operations, planning, and data-driven decision
+            training
+          </p>
+          <p class="fs14 mb8 fc4">Highlights:</p>
+          <ul class="feature-list">
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+
+              <p class="fw6 mr4">Mode:</p>
+              <p class="">Online/Offline</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Timing:</p>
+              <p class="">9:00 AM to 6:30 PM</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Duration:</p>
+              <p class="">45 Days</p>
+            </li>
+          </ul>
+          <div class="v-center jcsb">
+            <a href="#" class="btn-d1 mr8 tac">Learn More</a>
+            <a href="#" class="enroll-btn tac">Enroll Now</a>
+          </div>
+        </div>
+        <div class="training-card" data-aos="flip-left">
+          <div class="training-header-row">
+            <h3 class="tac">Enterprise Drone Management</h3>
+          </div>
+          <div class="price box-center fdc">₹75,000</div>
+          <p class="subtitle">
+            Full-scale drone operations, planning, and data-driven decision
+            training
+          </p>
+          <p class="fs14 mb8 fc4">Highlights:</p>
+          <ul class="feature-list">
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+
+              <p class="fw6 mr4">Mode:</p>
+              <p class="">Online/Offline</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Timing:</p>
+              <p class="">9:00 AM to 6:30 PM</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Duration:</p>
+              <p class="">45 Days</p>
+            </li>
+          </ul>
+          <div class="v-center jcsb">
+            <a href="#" class="btn-d1 mr8 tac">Learn More</a>
+            <a href="#" class="enroll-btn tac">Enroll Now</a>
+          </div>
+        </div>
+        <div class="training-card" data-aos="flip-left">
+          <div class="training-header-row">
+            <h3 class="tac">Enterprise Drone Management</h3>
+          </div>
+          <div class="price box-center fdc">₹75,000</div>
+          <p class="subtitle">
+            Full-scale drone operations, planning, and data-driven decision
+            training
+          </p>
+          <p class="fs14 mb8 fc4">Highlights:</p>
+          <ul class="feature-list">
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+
+              <p class="fw6 mr4">Mode:</p>
+              <p class="">Online/Offline</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Timing:</p>
+              <p class="">9:00 AM to 6:30 PM</p>
+            </li>
+            <li class="v-center">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 -3.5 170 170"
+                class="mr8"
+                fill="none"
+              >
+                <use xlink:href="#tick" />
+              </svg>
+              <p class="fw6 mr4">Duration:</p>
+              <p class="">45 Days</p>
+            </li>
+          </ul>
+          <div class="v-center jcsb">
+            <a href="#" class="btn-d1 mr8 tac">Learn More</a>
+            <a href="#" class="enroll-btn tac">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-help-section">
+      <h2>Only 9 Seats Left in Our Upcoming Batch - 7th July, 2025</h2>
+      <p>
+        Our classes fill up quickly due to our limited batch size policy. Secure
+        your spot today.
+      </p>
+      <div class="faq-buttons">
+        <button class="btn primary">Chat with Counselor</button>
+        <a href="tel:9953777320" class="btn outline">Call: 9953-777-320</a>
+      </div>
+    </section>
+
+    <section class="leadership-section why-choose">
+      <div class="section-heading" data-aos="zoom-in">
+        <h2>Meet Your<span> Lead Instructor</span></h2>
+
+        <p>
+          Our lead instructors don’t just teach they inspire, mentor, and lead
+          from the frontlines of aviation.
+        </p>
+      </div>
+
+      <div class="slider-container v-center pr" data-aos="zoom-in">
+        <button class="slider-btn prev-btn" onclick="scrollSlider('left')">
+          &#8592;
+        </button>
+
+        <div class="leaders" id="leaders-slider">
+          <!-- Leader 1 -->
+          <div class="leader-card">
+            <div class="v-center fdc">
+              <div class="leader-image">
+                <img src="images/pankaj.jpg" alt="Leader Name" />
+              </div>
+              <div>
+                <div class="inst-rating v-center jcc mt8">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="mr4"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <span class="fs16 fw6">4.9</span>
+                </div>
+                <div class="fs12 fc4 inst-students mt4">(1200 Students)</div>
+              </div>
+            </div>
+            <div class="leader-info">
+              <h3>Pankaj Agarwal</h3>
+              <p class="role">Co-founder & Strategy Head</p>
+
+              <p class="about lc4" id="aboutText">
+                IIM graduate with 23 years of experience. Serial entrepreneur
+                focused on strategy and scale for Smart Group. IIM graduate with
+                23 years of experience. Serial entrepreneur focused on strategy
+                and scale for Smart Group. IIM graduate with 23 years of
+                experience. Serial entrepreneur focused on strategy and scale
+                for Smart Group. IIM graduate with 23 years of experience.
+                Serial entrepreneur focused on strategy and scale for Smart
+                Group. IIM graduate with 23 years of experience. Serial
+                entrepreneur focused on strategy and scale for Smart Group.
+              </p>
+              <span class="fs14 fc3 mb16 tar db" id="readMoreBtn">Read more</span>
+              <ul class="tags">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  IIM Alumni
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  23+ Years Experience
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  Serial Entrepreneur
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  Multiple Successful Exits
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Leader 2 -->
+          <div class="leader-card">
+            <div class="v-center fdc">
+              <div class="leader-image">
+                <img src="images/deepak.jpg" alt="Leader Name" />
+              </div>
+              <div>
+                <div class="inst-rating v-center jcc mt8">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="mr4"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <span class="fs16 fw6">4.9</span>
+                </div>
+                <div class="fs12 fc4 inst-students mt4">(1200 Students)</div>
+              </div>
+            </div>
+            <div class="leader-info">
+              <h3>Deepak Aggarwal</h3>
+              <p class="role">Co-founder & Chief Training Officer</p>
+
+              <p class="about">
+                Aviation enthusiast and DGCA-certified Drone Master Instructor
+                with 20+ years in technology business.
+              </p>
+              <ul class="tags">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  DGCA Drone Instructor
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  20+ Years Experience
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  Technology Expert
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  17+ Years Aviation
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Leader 3 -->
+          <div class="leader-card">
+            <div class="v-center fdc">
+              <div class="leader-image">
+                <img src="images/pankaj.jpg" alt="Leader Name" />
+              </div>
+              <div>
+                <div class="inst-rating v-center jcc mt8">
+                  <svg
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="mr4"
+                  >
+                    <use xlink:href="#filled-star" />
+                  </svg>
+                  <span class="fs16 fw6">4.9</span>
+                </div>
+                <div class="fs12 fc4 inst-students mt4">(1200 Students)</div>
+              </div>
+            </div>
+            <div class="leader-info">
+              <h3>Pankaj Agarwal</h3>
+              <p class="role">Co-founder & Strategy Head</p>
+
+              <p class="about">
+                IIM graduate with 23 years of experience. Serial entrepreneur
+                focused on strategy and scale for Smart Group.
+              </p>
+              <ul class="tags">
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  IIM Alumni
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  23+ Years Experience
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  Serial Entrepreneur
+                </li>
+                <li class="v-center">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <use xlink:href="#svg-dot" />
+                  </svg>
+                  Multiple Successful Exits
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next-btn" onclick="scrollSlider('right')">
+          &#8594;
+        </button>
+      </div>
+    </section>
+
+    <!-- <section class="drone-instructor-section mt24">
+      <h2 class="drone-instructor-heading tac">Meet Your Lead Instructor</h2>
+
+    </section> -->
+
+    <section class="dp">
+      <div class="section-heading faq-header">
+        <h2>Taking Off with <span>Top Airline Careers</span></h2>
+        <p class="lh20">
+          Our students have been placed at leading airlines including
+        </p>
+      </div>
+
+      <div class="drone-marquee marquee-container">
+        <div class="drone-marquee-track">
+          <div class="drone-logo">
+            <img src="images/indigo-logo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/svg/air-india.svg" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+          <div class="drone-logo">
+            <img src="images/indigo.png" alt="FlapOne Logo" />
+            <p>IndiGo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose" data-aos="fade-up">
+      <div class="section-heading" data-aos="zoom-in">
+        <div class="testimonials-header">
+          <h2>What Our <span>Clients Say</span></h2>
+        </div>
+        <p class="tac">
+          Delivering trusted results with unmatched quality from classrooms to
+          skies
+        </p>
+      </div>
+
+      <div class="testimonial-slider-wrapper">
+        <button class="slider-btn prev-btn"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7071 4.29289C12.0976 4.68342 12.0976 5.31658 11.7071 5.70711L6.41421 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H6.41421L11.7071 18.2929C12.0976 18.6834 12.0976 19.3166 11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 10.2929 19.7071L3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929L10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289Z" fill="#fff"/>
+</svg></button>
+
+        <div class="testimonial-slider">
+          <div class="testimonial-container" id="testimonialTrack">
+            <!-- CARD 1 -->
+            <div class="testimonial-card">
+              <div class="profile">
+                <img
+                  src="https://randomuser.me/api/portraits/men/133.jpg"
+                  alt="Sarah Johnson"
+                  onerror="handleImageError(this, 'Sarah Johnson')"
+                />
+                <div class="info tal">
+                  <h4>Sarah Johnson</h4>
+                  <p>CPL Student</p>
+                </div>
+              </div>
+              <div class="stars">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+              </div>
+              <div class="message-container">
+                <p class="message" id="message">
+                  "Flapone's drone services revolutionized our crop monitoring
+                  capabilities. Their team provided exceptional service and the
+                  data collected has optimized our operations significantly.
+                  Flapone's drone services revolutionized our crop monitoring
+                  capabilities. Their team provided exceptional service and the
+                  data collected has optimized our operations significantly."
+                </p>
+                <span class="read-more" onclick="toggleMessage()"
+                  >Read more</span
+                >
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="testimonial-card">
+              <div class="profile">
+                <img
+                  src="https://randomuser.me/api/portraits/men/2.jpg"
+                  alt="Michael Chen"
+                />
+                <div class="info tal">
+                  <h4>Capt. Nipun Singh</h4>
+                  <p>Current Student</p>
+                </div>
+              </div>
+              <div class="stars">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+              </div>
+              <p class="message">
+                "The pilot training program at Flapone exceeds all standards.
+                Their instructors are highly skilled and the practical scenarios
+                prepared our team for real-world operations."
+              </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="testimonial-card">
+              <div class="profile">
+                <img
+                  src="https://randomuser.me/api/portraits/women/3.jpg"
+                  alt="Emily Rodriguez"
+                />
+                <div class="info tal">
+                  <h4>Emily Rodriguez</h4>
+                  <p>Parent of Student</p>
+                </div>
+              </div>
+              <div class="stars">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#filled-star" />
+                </svg>
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="#un-filled-star" />
+                </svg>
+              </div>
+              <p class="message">
+                "We purchased our drone fleet from Flapone and couldn't be
+                happier with the quality and ongoing support. Their technical
+                expertise is unmatched in the industry."
+              </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <a href="testimonial.html" class="testimonial-card box-center fdc">
+              <div>
+                <p class="message">Curious what others are saying?</p>
+                <span class="fc3 db tac">View More >> </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <button class="slider-btn next-btn">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq-container" id="faqs" data-aos="fade-up">
+        <div class="section-heading faq-header" data-aos="zoom-in">
+          <h2>Frequently Asked <span>Questions</span></h2>
+          <p class="lh20">
+            Find answers to the most commonly asked questions about our courses
+            and features.
+          </p>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            What are the eligibility criteria for CPL ground classes?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Students must be at least 17 years old and have completed 10+2
+              with Physics and Mathematics as subjects. A Class 2 Medical
+              Certificate from a DGCA approved doctor is also required before
+              joining.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            How long is the CPL ground course?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Our comprehensive CPL ground course typically takes 3-4 months to
+              complete, with classes held 5 days a week. The exact duration may
+              vary based on student progress and batch size.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            What is your batch size?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              We maintain small batch sizes of maximum 15 students to ensure
+              personalized attention and better learning outcomes. This allows
+              our instructors to focus on individual student needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            Do you provide study materials?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Yes, we provide comprehensive study materials including textbooks,
+              practice question banks, and digital resources. Our materials are
+              regularly updated to align with the latest DGCA exam patterns.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            What is the fee structure and are there installment options?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Our fee structure is competitive and we do offer installment
+              payment plans. We also provide guidance on aviation education
+              loans available through our banking partners. Please contact us
+              for the latest fee details.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-title">
+            Do you provide placement assistance after completion?
+            <span class="icon"
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                  fill="#000000"
+                /></svg
+            ></span>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Yes, we provide career counseling and placement assistance. Our
+              industry connections with various airlines and our alumni network
+              help students find opportunities after successful course
+              completion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="timeline-section-career success-stories">
+      <div class="section-heading" data-aos="zoom-in">
+        <h2>Recent <span>Success Stories</span></h2>
+        <p>See how we've helped other customers</p>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1 -->
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="slide">
+            <div class="card">
+              <h3>
+                Priyanshi Kumar: "Successfully Cleared RTR (A) Exam on My First
+                Attempt!"
+              </h3>
+              <div class="result">
+                <p class="lh22 lc-3">
+                  I passed the RTR (A) exam on the first attempt, thanks to
+                  Sanjeev Sir and the incredible Flapone team. The dedication
+                  and patience of Sanjeev sir I passed the RTR (A) exam on the
+                  first attempt, thanks to Sanjeev Sir and the incredible
+                  Flapone team. The dedication and patience of Sanjeev sir
+                </p>
+                <span class="mt4 db tdu ls1 fw6">Read More</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="dots-wrapper">
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <section class="timeline-section-career">
+      <div class="section-heading" data-aos="zoom-in">
+        <h2>Your Path to a <span>Career in Commercial Aviation</span></h2>
+        <p>
+          Navigate your journey from student pilot to airline captain with our
+          comprehensive career progression guide
+        </p>
+      </div>
+
+      <div class="timeline-career">
+        <div class="timeline-item-career" data-aos="fade-up">
+          <div class="timeline-left-career">
+            <div class="timeline-card-career">
+              <span class="timeline-tag-career">Entry Level</span>
+              <h3>Student Pilot (SPL Holder)</h3>
+              <p>
+                Begin your aviation journey with a Student Pilot License (SPL).
+                Learn aviation basics and complete initial flying hours with
+                instructors
+              </p>
+              <div class="df aifs jcsb mt12">
+                <div>
+                  <p>Experience Timeline</p>
+                  <p class="fw6">0–6 months</p>
+                </div>
+                <div>
+                  <p>Typical Earnings</p>
+                  <p class="fw6">(Training Phase)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pulse-dot"></div>
+
+          <div class="timeline-right-career">
+            <img src="images/air-path-1.png" alt="Create" />
+          </div>
+        </div>
+
+        <div class="timeline-item-career" data-aos="fade-up">
+          <div class="timeline-left-career">
+            <img src="images/air-path-2.png" alt="Collaborate" />
+          </div>
+          <div class="pulse-dot"></div>
+          <div class="timeline-right-career">
+            <div class="timeline-card-career">
+              <span class="timeline-tag-career">Trainee Level</span>
+              <h3>Cadet Pilot (Under CPL Training)</h3>
+              <p>
+                Enrolled in a DGCA-approved flying school, working toward your
+                Commercial Pilot License (CPL). Build flight hours, clear theory
+                exams, and gain simulator experience
+              </p>
+              <div class="df aifs jcsb mt12">
+                <div>
+                  <p>Experience Timeline</p>
+                  <p class="fw6">6–12 months</p>
+                </div>
+                <div>
+                  <p>Typical Earnings</p>
+                  <p class="fw6">(Training Phase)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item-career" data-aos="fade-up">
+          <div class="timeline-left-career">
+            <div class="timeline-card-career">
+              <span class="timeline-tag-career">Professional Entry</span>
+              <h3>Commercial Pilot (CPL Holder)</h3>
+              <p>
+                Fly aircraft commercially after obtaining a CPL. Eligible to
+                work as a First Officer with regional airlines or charter
+                companies
+              </p>
+              <div class="df aifs jcsb mt12">
+                <div>
+                  <p>Experience Timeline</p>
+                  <p class="fw6">1–2 years</p>
+                </div>
+                <div>
+                  <p>Typical Earnings</p>
+                  <p class="fw6">
+                    ₹1.5 – ₹3.5 lakh/month<br />(as First Officer)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pulse-dot"></div>
+          <div class="timeline-right-career">
+            <img src="images/air-path-3.png" alt="Protect" />
+          </div>
+        </div>
+
+        <div class="timeline-item-career" data-aos="fade-up">
+          <div class="timeline-left-career">
+            <img src="images/air-path-41.png" alt="Monetize" />
+          </div>
+          <div class="pulse-dot"></div>
+          <div class="timeline-right-career">
+            <div class="timeline-card-career">
+              <span class="timeline-tag-career">Advanced Level</span>
+              <h3>Airline First Officer</h3>
+              <p>
+                Operate as a First Officer with domestic or international
+                airlines. Assist Captain in daily operations, navigation, and
+                communication
+              </p>
+              <div class="df aifs jcsb mt12">
+                <div>
+                  <p>Experience Timeline</p>
+                  <p class="fw6">2–5 years</p>
+                </div>
+                <div>
+                  <p>Typical Earnings</p>
+                  <p class="fw6">₹3.5 – ₹6 lakh/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item-career" data-aos="fade-up">
+          <div class="timeline-left-career">
+            <div class="timeline-card-career">
+              <span class="timeline-tag-career">Expert Level</span>
+              <h3>Airline Captain / Commander</h3>
+              <p>
+                Take full command of commercial flights. Lead the crew, ensure
+                flight safety, and manage all operational aspects of aviation
+                missions
+              </p>
+              <div class="df aifs jcsb mt12">
+                <div>
+                  <p>Experience Timeline</p>
+                  <p class="fw6">5+ years</p>
+                </div>
+                <div>
+                  <p>Typical Earnings</p>
+                  <p class="fw6">₹6 – ₹12 lakh/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pulse-dot"></div>
+          <div class="timeline-right-career">
+            <img src="images/air-path-5.png" alt="Protect" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="section-heading" data-aos="zoom-in">
+        <h2>Related <span>Blogs & Insights</span></h2>
+        <p>Stay updated with the latest in drone technology</p>
+      </div>
+
+      <div class="blog-cards">
+        <a
+          href="/blog/future-of-drone-tech"
+          class="blog-card-link blog-card"
+          data-aos="flip-right"
+        >
+          <div class="">
+            <img
+              src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/kisaan-Drone-Cover_1748337728.jpeg"
+              alt="Drone Image"
+            />
+            <div class="blog-content">
+              <span class="blog-date ls1">March 15, 2024</span>
+              <h3 class="lh22">Future of Drone Technology in India</h3>
+              <p class="lh22 lc-3">
+                The drone sector is rapidly expanding, not only in India but
+                also worldwide. This is attributable to progressions in
+                artificial intelligence, automation The drone sector is rapidly
+                expanding, not only in India but also worldwide. This is
+                attributable to progressions in artificial intelligence,
+                automation
+              </p>
+              <button>Read More</button>
+            </div>
+          </div></a
+        >
+
+        <div class="blog-card" data-aos="flip-right">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/7th_1748852551.png"
+            alt="Green Hills Image"
+          />
+          <div class="blog-content">
+            <span class="blog-date ls1">March 10, 2024</span>
+            <h3 class="lh22">Career Opportunities in Drone Operations</h3>
+            <p class="lh22">
+              Discover the growing job market for certified drone pilots...
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+
+        <div class="blog-card" data-aos="flip-right">
+          <img
+            src="https://www.hlimg.com/images/flapone-crm/assets//images/upload-image/Military-drone-cover_1747042402.jpg"
+            alt="Camel Desert Image"
+          />
+          <div class="blog-content">
+            <span class="blog-date ls1">March 5, 2024</span>
+            <h3 class="lh22">Safety Guidelines for Drone Flying</h3>
+            <p class="lh22">
+              Essential safety protocols every drone pilot should know...
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+      <div class="view-more box-center mt24">
+        <a href="#"> <button>View More</button></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="deeper">
+        <div class="footer-section logo-info">
+          <a href="index.html">
+            <img
+              src="images/flapone-footer.png"
+              alt="FlapOne Logo"
+              class="f-logo"
+          /></a>
+          <p>
+            A joint venture with Airborne, empowering students to build
+            successful aviation careers regardless of academic background.
+            <a href="about.html"> <span class="fc3">Read more</span></a>
+          </p>
+          <div class="mt16">
+            <!-- <div class="df aifs">
+              <p class="mr12">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                    stroke="#ccc"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                    stroke="#ccc"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </p>
+              <p>
+                E-549, 2nd Floor, Ramphal Chowk, Sector-7, Dwarka, New
+                Delhi-110075
+              </p>
+            </div> -->
+            <div class="df aifs mt12">
+              <p class="mr12">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.27396 8.94048C3.01237 7.88621 6.8401 6 12 6C17.1599 6 20.9876 7.88621 22.726 8.94048C23.7251 9.54634 24.1355 10.6912 23.9609 11.7514L23.5032 14.5308C23.2353 16.157 21.704 17.2467 20.101 16.9518L17.6354 16.4982C16.5887 16.3056 15.8888 15.2984 16.0637 14.2365L16.2935 12.8413C15.7061 12.4933 14.3714 11.9088 12 11.9088C9.62863 11.9088 8.29388 12.4933 7.70655 12.8413L7.93635 14.2365C8.11123 15.2984 7.41126 16.3056 6.36463 16.4982L3.89895 16.9518C2.29601 17.2467 0.764683 16.157 0.49684 14.5308L0.0390736 11.7514C-0.135542 10.6912 0.274923 9.54635 1.27396 8.94048ZM12 7.96961C7.30768 7.96961 3.82761 9.68804 2.2745 10.6299C2.04751 10.7676 1.8986 11.061 1.95897 11.4276L2.41674 14.207C2.50602 14.749 3.01646 15.1123 3.55077 15.014L6.01645 14.5603L5.76984 13.063C5.66906 12.4511 5.85834 11.6997 6.51793 11.2691C7.34118 10.7317 9.06148 9.93922 12 9.93922C14.9385 9.93922 16.6588 10.7317 17.4821 11.2691C18.1417 11.6997 18.3309 12.4511 18.2302 13.063L17.9836 14.5603L20.4492 15.014C20.9835 15.1123 21.494 14.749 21.5833 14.207L22.041 11.4276C22.1014 11.061 21.9525 10.7676 21.7255 10.6299C20.1724 9.68804 16.6923 7.96961 12 7.96961Z"
+                    fill="#333"
+                  />
+                </svg>
+              </p>
+              <a href="tel:7303017062"><p>7303-017-062</p></a>
+            </div>
+            <div class="df aifs mt12">
+              <p class="mr12">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="#333">
+                  <use xlink:href="#email" />
+                </svg>
+              </p>
+              <a href="mailto:info@flapone.com"><p>info@flapone.com</p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul class="two-column">
+            <li><a href="about-us.html"> About Us</a></li>
+            <li><a href="about-us.html"> Branches</a></li>
+            <li><a href="about-us.html">Teaching Staffs</a></li>
+            <li><a href="about-us.html">Blog</a></li>
+            <li><a href="about-us.html">Awards</a></li>
+            <li><a href="about-us.html">Success Stories</a></li>
+            <li><a href="about-us.html">Testimonials</a></li>
+            <li><a href="about-us.html">Sitemap</a></li>
+            <li><a href="about-us.html">Aircraft Training</a></li>
+            <li><a href="about-us.html">Drone Training</a></li>
+            <li><a href="about-us.html">Drone Services</a></li>
+            <li><a href="about-us.html">Buy Drones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section support-links">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="about-us.html"> Terms and Conditions</a></li>
+            <li><a href="about-us.html"> Privacy Policy</a></li>
+            <li><a href="about-us.html">Refund Policy</a></li>
+            <li><a href="about-us.html">Help & FAQ</a></li>
+            <li><a href="about-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">Partner With Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section social-follow">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <div class="social-icons v-center">
+              <a
+                href="https://www.google.com/search?authuser=0&amp;gl=in&amp;hl=en&amp;output=search&amp;q=Flapone+Aviation+Private+Limited&amp;ludocid=11163345003520055109&amp;gsas=1&amp;lsig=AB86z5V9Lp5cCLXOy_PIogziqui1&amp;ved=1i%3A2%2Ct%3A109124%2Ce%3A1%2Cp%3AHUr1YZ6sKJCf4-EP-JG4yA4%3A2"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#google"></use>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/flapone" target="_blank">
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#fb"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/flaponeaviation"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="-3.5 0 19 19"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#linkedin"></use></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/flaponeaviation/"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 32 32"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <use xlink:href="#insta"></use>
+                </svg>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@flapone_aviation/"
+                target="_blank"
+              >
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 -0.5 25 25"
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="br50 p8 mr4 brd1 cp"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.168 19.0028C20.4724 19.0867 22.41 17.29 22.5 14.9858V9.01982C22.41 6.71569 20.4724 4.91893 18.168 5.00282H6.832C4.52763 4.91893 2.58998 6.71569 2.5 9.01982V14.9858C2.58998 17.29 4.52763 19.0867 6.832 19.0028H18.168Z"
+                    stroke="#fff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.008 9.17784L15.169 11.3258C15.3738 11.4454 15.4997 11.6647 15.4997 11.9018C15.4997 12.139 15.3738 12.3583 15.169 12.4778L12.008 14.8278C11.408 15.2348 10.5 14.8878 10.5 14.2518V9.75184C10.5 9.11884 11.409 8.77084 12.008 9.17784Z"
+                    stroke="#fff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+          <h3>Certified By</h3>
+          <div class="approved">
+            <div class="seal-dgca mt8 df">
+              <a
+                href="https://www.flapone.com/awards-recognitions/flapone-aviation-now-an-authorized-remote-pilot-training-organization-rpto"
+                class="cp"
+                target="_blank"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets/images/seal-dgca.png"
+                  alt="Approved by DGCA"
+                  title="Approved by the Directorate General of Civil Aviation of India"
+                  class=""
+                />
+              </a>
+              <a
+                href="https://www.flapone.com/awards-recognitions/flapone-aviation-receives-prestigious-certificate-of-recognition-from-the-government-of-india"
+                class="cp df h100"
+                target="_blank"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets/images/dpiit.jpg"
+                  alt="Recognized by DPIIT"
+                  title="Recognized by the Department for Promotion of Industry and Internal Trade"
+                  class=""
+              /></a>
+              <img
+                src="https://www.hlimg.com/images/flapone-crm/assets/images/skill-india.png"
+                alt="Skill-India"
+                title="Registered on Skill-India"
+                class=""
+              />
+              <a
+                href="https://www.flapone.com/awards-recognitions/proudly-announcing-flapone-aviation-is-now-a-registered-small-business-in-india"
+                class="cp df h100"
+                target="_blank"
+              >
+                <img
+                  src="https://www.hlimg.com/images/flapone-crm/assets/images/msme.jpg"
+                  alt="MSME Certified"
+                  title="MSME Certified"
+                  class="ml8"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="v-center jcsb copy-right">
+        <div class="payment-section card-accept">
+          <h3 class="tal fw6">We Accept</h3>
+          <div class="payments">
+            <img src="images/one.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/two.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/three.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/four.png" alt="Visa Card" title="Visa Card" />
+            <img src="images/five.png" alt="Visa Card" title="Visa Card" />
+            <img
+              src="images/six.svg"
+              alt="Visa Card"
+              title="Visa Card"
+              class="bg1"
+            />
+          </div>
+        </div>
+
+        <div class="copyright" id="copyrightText"></div>
+      </div>
+    </footer>
+
+    <div class="dn">
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="ab-bd">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.39113 10.5439C6.39051 9.44976 6.7016 8.37924 7.28617 7.46394C7.86503 6.55596 8.69417 5.84514 9.6681 5.42194C10.9668 4.85935 12.4322 4.85935 13.7309 5.42194C14.7052 5.84498 15.5347 6.55581 16.1138 7.46394C17.3021 9.32579 17.309 11.731 16.1314 13.5999L18.525 17.9719L16.0037 17.4719L15.1973 19.9999L12.9753 15.9249C12.1382 16.1414 11.2618 16.1414 10.4247 15.9249L8.20267 19.9999L7.39635 17.4709L4.875 17.9719L7.26863 13.5999C6.69465 12.6895 6.38988 11.6281 6.39113 10.5439V10.5439Z"
+            stroke="#f4836c"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.4504 8.32691C11.4973 8.22925 11.5943 8.16742 11.7005 8.16742C11.8066 8.16742 11.9036 8.22925 11.9506 8.32691L12.4683 9.37291C12.5069 9.45209 12.5788 9.50881 12.6633 9.52691L13.7475 9.74991C13.8468 9.77396 13.9266 9.84932 13.9583 9.94877C13.99 10.0482 13.9688 10.1574 13.9025 10.2369L13.1284 11.1369C13.0738 11.2009 13.0483 11.2856 13.0582 11.3699L13.2015 12.5879C13.216 12.6944 13.1719 12.8004 13.0868 12.8633C13.0018 12.9262 12.8898 12.9357 12.7959 12.8879L11.8209 12.3799C11.7419 12.3384 11.6483 12.3384 11.5693 12.3799L10.5943 12.8879C10.5004 12.9357 10.3884 12.9262 10.3034 12.8633C10.2183 12.8004 10.1742 12.6944 10.1887 12.5879L10.3321 11.3729C10.3419 11.2886 10.3164 11.2039 10.2619 11.1399L9.4877 10.2399C9.41982 10.159 9.39893 10.0473 9.43286 9.94637C9.46679 9.84548 9.55041 9.77067 9.65248 9.74991L10.7367 9.52591C10.8212 9.50781 10.893 9.45109 10.9317 9.37191L11.4504 8.32691Z"
+            stroke="#f4836c"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.90164 13.1977C7.6795 12.8481 7.21601 12.7448 6.8664 12.9669C6.51679 13.189 6.41345 13.6525 6.63559 14.0021L7.90164 13.1977ZM7.95112 14.4679L8.49338 13.9498L8.49105 13.9474L7.95112 14.4679ZM10.1224 15.8399L10.3567 15.1274L10.3557 15.1271L10.1224 15.8399ZM10.2422 16.6561C10.6433 16.7596 11.0523 16.5184 11.1558 16.1173C11.2593 15.7162 11.018 15.3072 10.6169 15.2037L10.2422 16.6561ZM16.7644 14.0021C16.9865 13.6525 16.8832 13.189 16.5336 12.9669C16.184 12.7448 15.7205 12.8481 15.4983 13.1977L16.7644 14.0021ZM15.4489 14.4679L14.9089 13.9474L14.9066 13.9498L15.4489 14.4679ZM13.2775 15.8399L13.0443 15.1271L13.0433 15.1274L13.2775 15.8399ZM12.783 15.2037C12.382 15.3072 12.1407 15.7162 12.2442 16.1173C12.3477 16.5184 12.7567 16.7596 13.1578 16.6561L12.783 15.2037ZM6.63559 14.0021C6.86081 14.3566 7.12062 14.6871 7.41118 14.9885L8.49105 13.9474C8.27068 13.7188 8.07317 13.4676 7.90164 13.1977L6.63559 14.0021ZM7.40886 14.986C8.0972 15.7064 8.94842 16.2449 9.88921 16.5527L10.3557 15.1271C9.65246 14.897 9.01285 14.4935 8.49337 13.9498L7.40886 14.986ZM9.88822 16.5524C10.0051 16.5908 10.1231 16.6254 10.2422 16.6561L10.6169 15.2037C10.5294 15.1811 10.4426 15.1557 10.3567 15.1274L9.88822 16.5524ZM15.4983 13.1977C15.3268 13.4676 15.1293 13.7188 14.9089 13.9474L15.9888 14.9885C16.2794 14.6871 16.5392 14.3566 16.7644 14.0021L15.4983 13.1977ZM14.9066 13.9498C14.3871 14.4935 13.7475 14.897 13.0443 15.1271L13.5108 16.5527C14.4516 16.2449 15.3028 15.7064 15.9911 14.986L14.9066 13.9498ZM13.0433 15.1274C12.9574 15.1557 12.8706 15.1811 12.783 15.2037L13.1578 16.6561C13.2769 16.6254 13.3949 16.5908 13.5118 16.5524L13.0433 15.1274Z"
+            fill="#f4836c"
+          />
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 -3.5 170 170"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="tick">
+          <path
+            d="M142.196 30.4125C142.586 30.0637 142.897 29.6356 143.109 29.1567C143.32 28.6778 143.427 28.1592 143.422 27.6357C143.417 27.1122 143.3 26.5959 143.079 26.1213C142.858 25.6467 142.538 25.2248 142.141 24.8838C141.722 24.5249 141.307 24.1678 140.895 23.8127C137.751 21.1093 134.5 18.3102 131.1 15.9225C105.123 -2.36044 78.1316 -2.4633 50.8803 7.23287C26.2068 16.0055 10.3619 33.5563 3.77909 59.3882C-3.56415 88.249 2.86618 113.71 22.9048 135.073C23.4261 135.625 23.9582 136.177 24.4895 136.704C35.2539 147.469 48.6614 154.115 59.2847 158.739C63.8445 160.731 87.2404 163.149 93.5707 162.206C131.19 156.588 155.946 135.37 164.569 99.8725C166.215 92.9194 167.035 85.7962 167.011 78.6508C166.974 71.1466 165.712 63.6988 163.275 56.6012C163.097 56.0703 162.805 55.5851 162.418 55.1805C162.031 54.7759 161.56 54.4618 161.037 54.2606C160.515 54.0595 159.954 53.9764 159.396 54.0171C158.838 54.0579 158.295 54.2216 157.808 54.4965L157.706 54.5547C156.931 54.9984 156.336 55.7005 156.027 56.5381C155.717 57.3757 155.712 58.2954 156.012 59.1364C158.212 65.2371 159.334 71.674 159.327 78.1592C159.251 85.9394 158.198 93.6792 156.192 101.197C150.248 122.8 136.038 138.545 112.75 149.315C89.0741 160.65 55.1215 149.19 46.0879 143.226C36.1031 136.4 27.3663 127.908 20.2596 118.121C9.11418 102.34 6.61369 79.6587 12.6028 58.9229C15.4055 49.3489 20.3036 40.5185 26.9421 33.0722C33.5806 25.6259 41.793 19.7503 50.9838 15.8714C74.8941 5.93474 98.8852 4.18192 122.285 19.0635C125.422 21.061 133.422 27.3424 137.465 30.5501C138.143 31.0882 138.99 31.3691 139.855 31.3432C140.721 31.3172 141.549 30.986 142.194 30.4082L142.196 30.4125Z"
+            fill="#22c55e"
+          />
+          <path
+            d="M74.6287 104.313C76.2312 102.79 77.1115 102.019 77.9173 101.177C103.753 74.1855 132.047 49.8851 160.508 25.7727C161.584 24.8619 162.685 23.7 163.958 23.3737C165.493 22.9815 167.996 23.4326 168.682 24.2661C169.133 24.8821 169.418 25.6035 169.509 26.3612C169.601 27.1189 169.496 27.8875 169.206 28.5932C168.537 30.3474 166.907 31.8498 165.429 33.1629C156.607 41.0019 147.538 48.5708 138.872 56.5716C120.756 73.3024 102.756 90.1576 84.8704 107.137C77.0334 114.561 74.0173 114.862 66.8059 106.929C62.0589 101.705 47.7328 84.0973 43.3455 78.5495C42.7256 77.6872 42.1735 76.7781 41.6941 75.8305C40.7045 74.0756 40.0576 72.1419 42.0246 70.7814C44.2158 69.2662 45.7707 70.8473 47.0696 72.4937C48.384 74.1607 49.5048 75.9916 50.9121 77.5713C55.2811 82.4737 69.908 99.1421 74.6287 104.313Z"
+            fill="#22c55e"
+          />
+        </symbol>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="chevron-left" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M14.5 17L9.5 12L14.5 7"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="chevron-right" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M9.5 7L14.5 12L9.5 17"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="full-star" viewBox="-6.4 -6.4 76.80 76.80">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              fill="#ffa500"
+              d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z"
+            />
+          </g>
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="half-star" viewBox="-3.6 -3.6 43.20 43.20">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <title>half-star-solid</title>
+            <path
+              class="clr-i-solid clr-i-solid-path-1"
+              d="M34,16.78a2.22,2.22,0,0,0-1.29-4l-9-.34a.23.23,0,0,1-.2-.15L20.4,3.89a2.22,2.22,0,0,0-4.17,0l-3.1,8.43a.23.23,0,0,1-.2.15l-9,.34a2.22,2.22,0,0,0-1.29,4l7.06,5.55a.23.23,0,0,1,.08.24L7.35,31.21a2.22,2.22,0,0,0,3.38,2.45l7.46-5a.22.22,0,0,1,.25,0l7.46,5a2.2,2.2,0,0,0,2.55,0,2.2,2.2,0,0,0,.83-2.4l-2.45-8.64a.22.22,0,0,1,.08-.24ZM24.9,23.11l2.45,8.64A.22.22,0,0,1,27,32l-7.46-5a2.21,2.21,0,0,0-1.24-.38h0V4.44h0a.2.2,0,0,1,.21.15L21.62,13a2.22,2.22,0,0,0,2,1.46l9,.34a.22.22,0,0,1,.13.4l-7.06,5.55A2.21,2.21,0,0,0,24.9,23.11Z"
+            />
+            <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+          </g>
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="star" viewBox="-2.4 -2.4 28.80 28.80">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+      </svg>
+
+      <svg
+        fill="red"
+        width="800px"
+        height="800px"
+        viewBox="-4 0 32 32"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="twitter">
+          <path
+            d="M24 8.531c-0.688 1-1.5 1.844-2.469 2.563 0.031 0.219 0.031 0.438 0.031 0.656 0 6.5-4.938 14-14 14-2.781 0-5.375-0.844-7.563-2.219 0.375 0.031 0.781 0.094 1.188 0.094 2.313 0 4.406-0.813 6.094-2.125-2.188-0.031-3.969-1.5-4.594-3.438 0.281 0.063 0.625 0.094 0.938 0.094 0.438 0 0.906-0.063 1.313-0.188-2.281-0.438-3.969-2.406-3.969-4.781v-0.063c0.688 0.344 1.406 0.563 2.219 0.594-1.313-0.906-2.188-2.406-2.188-4.094 0-0.906 0.25-1.75 0.656-2.5 2.438 2.969 6.063 4.969 10.156 5.156-0.063-0.344-0.125-0.75-0.125-1.125 0-2.719 2.188-4.938 4.906-4.938 1.438 0 2.719 0.625 3.625 1.594 1.125-0.219 2.156-0.656 3.094-1.219-0.344 1.156-1.125 2.156-2.125 2.75 1-0.125 1.906-0.406 2.813-0.813z"
+          ></path>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="tick">
+          <path
+            d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
+            class="mr8"
+          />
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="right-arrow-black" viewBox="0 0 492.004 492.004">
+          <g>
+            <g>
+              <path
+                d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+              c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+              c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+              c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"
+              />
+            </g>
+          </g>
+        </symbol>
+      </svg>
+
+      <svg
+        width="800px"
+        height="800px"
+        viewBox="0 0 24 24"
+        id="curve-arrow-right-8"
+        data-name="Flat Color"
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon flat-color"
+      >
+        <symbol id="curve-arrow">
+          <path
+            id="primary"
+            d="M21.71,14.29l-3-3a1,1,0,0,0-1.42,1.42L18.59,14h-3.1A12.14,12.14,0,0,1,4,5.68a1,1,0,0,0-1.9.64A14.14,14.14,0,0,0,15.49,16h3.1l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3-3A1,1,0,0,0,21.71,14.29Z"
+          ></path>
+        </symbol>
+      </svg>
+
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="calendar">
+          <path
+            d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+            stroke="#ff6d60"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px">
+        <symbol id="cross" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="white" />
+          <path
+            d="M7 17L16.8995 7.10051"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7 7.00001L16.8995 16.8995"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="24px"
+        height="24px"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="fb">
+          <path
+            d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="24px"
+        height="24px"
+        viewBox="-3.5 0 19 19"
+        xmlns="http://www.w3.org/2000/svg"
+        class="cf-icon-svg"
+      >
+        <symbol id="linkedin">
+          <path
+            d="M3.335 6.498a1.152 1.152 0 0 1-1.248 1.148h-.015a1.15 1.15 0 1 1 .03-2.295 1.147 1.147 0 0 1 1.233 1.147zM.982 8.553h2.206v6.637H.982zm10.165 2.83v3.807H8.941v-3.55c0-.893-.319-1.502-1.12-1.502a1.21 1.21 0 0 0-1.13.807 1.516 1.516 0 0 0-.073.538v3.708H4.41s.03-6.017 0-6.639h2.21v.94l-.016.023h.015V9.49a2.19 2.19 0 0 1 1.989-1.095c1.451 0 2.54.949 2.54 2.988z"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="48px"
+        height="48px"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="insta">
+          <path
+            d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"
+          />
+          <path
+            d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="arrow-forward">
+          <path
+            d="M16 7L21 12M21 12L16 17M21 12H3"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="user">
+          <path
+            d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <svg
+        fill="#ffffff"
+        width="800px"
+        height="800px"
+        viewBox="0 0 24 24"
+        data-name="Flat Color"
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon flat-color"
+      >
+        <symbol id="google">
+          <path
+            id="primary"
+            d="M12,22A10,10,0,0,1,2,12,10,10,0,0,1,12,2a9.9,9.9,0,0,1,7.07,2.93,1,1,0,0,1,0,1.42,1,1,0,0,1-1.41,0A7.91,7.91,0,0,0,12,4a8,8,0,0,0-8,8,8,8,0,0,0,8,8,8,8,0,0,0,7.94-7H12a1,1,0,0,1,0-2h9a1,1,0,0,1,1,1A10,10,0,0,1,12,22Z"
+            style="fill: #333"
+          ></path>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 17.7083C4.15875 16.0604 3 13.6655 3 11C3 6.02944 7.02944 2 12 2C16.9706 2 21 6.02944 21 11C21 13.6655 19.8412 16.0604 18 17.7083M7.80238 13.7177C7.29479 12.9353 7 12.0021 7 11C7 8.23858 9.23858 6 12 6C14.7614 6 17 8.23858 17 11C17 12.0008 16.706 12.9329 16.1996 13.7147M12 22C10.8954 22 10 21.1046 10 20V18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18V20C14 21.1046 13.1046 22 12 22ZM13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11Z"
+          stroke="#f4836c"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
+      <svg
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="map">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M9 20L3 17V4L9 7M9 20L15 17M9 20V7M15 17L21 20V7L15 4M15 17V4M9 7L15 4"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="-2.4 -2.4 28.80 28.80"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        transform="rotate(0)"
+      >
+        <symbol id="email">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </symbol>
+      </svg>
+      <svg
+        fill="#ffffff"
+        width="30px"
+        height="30px"
+        viewBox="-3.2 -3.2 38.40 38.40"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="phone_number">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <g id="SVGRepo_iconCarrier">
+            <title>phone</title>
+            <path
+              d="M21.999 4h-12c-1.104 0-1.999 0.896-1.999 2v20c0 1.104 0.895 2 1.999 2h12c1.105 0 2.001-0.896 2.001-2v-20c0-1.104-0.896-2-2.001-2zM13 5h5l0.062 1h-5.062v-1zM15.979 26.5c-0.552 0-1-0.447-1-1s0.448-1 1-1c0.553 0 1 0.447 1 1s-0.448 1-1 1zM21.999 23h-12l0.021-16h11.979v16z"
+            />
+          </g>
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="filled-star">
+          <path
+            d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+            fill="#f4836c"
+          />
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="un-filled-star">
+          <path
+            d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+            stroke="#ccc"
+            stroke-width="1.5"
+          />
+        </symbol>
+      </svg>
+      <svg
+        fill="#fff"
+        width="24px"
+        height="24px"
+        viewBox="-2 0 19 19"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="gov">
+          <path
+            d="M14.427 14.75v.491H.573v-.49a.476.476 0 0 1 .475-.476h.411a.497.497 0 0 1-.002-.048v-.443a.476.476 0 0 1 .475-.475h.41V9.692h-.307a.554.554 0 1 1 0-1.108h10.963a.554.554 0 1 1 0 1.108h-.292v3.617h.362a.476.476 0 0 1 .475.475v.443a.364.364 0 0 1-.003.048h.412a.476.476 0 0 1 .475.475zm-1.72-7.043a5.182 5.182 0 1 0-10.364 0zm-9.188 5.602h1.109v-3.062a.554.554 0 1 0-1.109 0zm2.294-3.053v3.053h1.109v-3.053a.554.554 0 1 0-1.109 0zm2.294.008v3.045h1.109v-3.045a.554.554 0 1 0-1.109 0zm2.294.008v3.037h1.109v-3.037a.554.554 0 0 0-1.109 0z"
+          />
+        </symbol>
+      </svg>
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <symbol id="svg-dot">
+          <path
+            d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z"
+            fill="#f4836c"
+          />
+        </symbol>
+      </svg>
+    </div>
+    <script src="/js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: false,
+      });
+
+      const track = document.getElementById("sliderTrack");
+      const dotsContainer = document.getElementById("dots");
+      const slides = document.querySelectorAll(".slide");
+
+      let currentIndex = 0;
+
+      function getVisibleCount() {
+        return window.innerWidth < 768 ? 1 : 3;
+      }
+
+      function renderDots() {
+        const visibleCount = getVisibleCount();
+        const totalDots = Math.ceil(slides.length / visibleCount);
+        const maxVisibleDots = 5;
+        const dotSize = 20; // 10px dot + 10px gap
+
+        const dots = document.getElementById("dots");
+        dots.innerHTML = "";
+
+        for (let i = 0; i < totalDots; i++) {
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          if (i === currentIndex) dot.classList.add("active");
+
+          dot.addEventListener("click", () => {
+            currentIndex = i;
+            updateSlider();
+          });
+
+          dots.appendChild(dot);
+        }
+
+        // Shift dot track only if active index >= 4 (5th dot)
+        let offset = 0;
+        if (currentIndex >= maxVisibleDots - 1) {
+          offset = (currentIndex - (maxVisibleDots - 1)) * dotSize;
+        }
+        dots.style.transform = `translateX(-${offset}px)`;
+      }
+
+      function updateSlider() {
+        const visibleCount = getVisibleCount();
+        const slideWidth = track.offsetWidth / visibleCount;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        renderDots();
+      }
+
+      function autoSlide() {
+        <!-- if (window.innerWidth < 768) return; -->
+        const maxIndex = Math.ceil(slides.length / getVisibleCount()) - 1;
+        currentIndex = currentIndex + 1 > maxIndex ? 0 : currentIndex + 1;
+        updateSlider();
+      }
+
+      window.addEventListener("resize", () => {
+        currentIndex = 0;
+        updateSlider();
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        renderDots();
+        updateSlider();
+        setInterval(autoSlide, 4000);
+      });
+
+      function showAboutSection() {
+        const section = document.getElementById("about-section");
+        section.style.display = "block";
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+
+      const text = document.getElementById("about-text");
+      const btn = document.getElementById("toggle-btn");
+
+      btn.addEventListener("click", () => {
+        text.classList.toggle("expanded");
+        btn.textContent = text.classList.contains("expanded")
+          ? "Read Less"
+          : "Read More";
+      });
+
+      function playYouTubeVideo() {
+        const container = document.getElementById("video-container");
+        container.innerHTML = `
+      <iframe
+        width="600"
+        height="400"
+        src="https://www.youtube.com/embed/ibV9KU22fAc?autoplay=1&start=71"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    `;
+      }
+
+      const container = document.getElementById("stats-scroll");
+      const leftBtn = document.querySelector(".scroll-btn.left");
+      const rightBtn = document.querySelector(".scroll-btn.right");
+
+      function updateScrollButtons() {
+        const cards = container.querySelectorAll(".stat-box");
+        const visibleWidth = container.offsetWidth;
+        const scrollWidth = container.scrollWidth;
+
+        if (cards.length <= 4 || scrollWidth <= visibleWidth) {
+          leftBtn.classList.add("hidden");
+          rightBtn.classList.add("hidden");
+        } else {
+          leftBtn.classList.remove("hidden");
+          rightBtn.classList.remove("hidden");
+        }
+
+        if (container.scrollLeft <= 0) {
+          leftBtn.classList.add("hidden");
+        } else {
+          leftBtn.classList.remove("hidden");
+        }
+
+        if (container.scrollLeft + visibleWidth >= scrollWidth - 1) {
+          rightBtn.classList.add("hidden");
+        } else {
+          rightBtn.classList.remove("hidden");
+        }
+      }
+
+      function scrollStats(direction) {
+        const scrollAmount = 260; // width + gap
+        if (direction === "left") {
+          container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        } else {
+          container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+
+        setTimeout(updateScrollButtons, 500);
+      }
+
+      updateScrollButtons();
+      container.addEventListener("scroll", updateScrollButtons);
+      window.addEventListener("resize", updateScrollButtons);
+
+      function scrollSlider(direction) {
+        const slider = document.getElementById("leaders-slider");
+        const card = slider.querySelector(".leader-card");
+        const gap = 20;
+        const cardWidth = card.offsetWidth + gap;
+
+        if (direction === "left") {
+          slider.scrollLeft -= cardWidth;
+        } else {
+          slider.scrollLeft += cardWidth;
+        }
+      }
+
+      const readMoreBtn = document.getElementById("readMoreBtn");
+      const aboutText = document.getElementById("aboutText");
+
+      readMoreBtn.addEventListener("click", function () {
+        aboutText.classList.toggle("expanded");
+        if (aboutText.classList.contains("expanded")) {
+          readMoreBtn.textContent = "Read less";
+        } else {
+          readMoreBtn.textContent = "Read more";
+        }
+      });
+    </script>
+  </body>
+</html>
